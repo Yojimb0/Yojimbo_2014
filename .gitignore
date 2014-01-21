@@ -1,0 +1,8 @@
+/dist
+node_modules/
+.tmp
+.sass-cache
+designs/
+.DS_Store
+*.sublime-project
+*.sublime-workspace

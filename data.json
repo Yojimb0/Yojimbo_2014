@@ -1,0 +1,261 @@
+{
+	"data": [
+		{
+			"id": "project_yj13",
+			"title": "Yojimbo.fr - Update 2014",
+			"project_details1": "Januray 2014 - Personal work",
+			"project_details2": "Yojimbo.fr is the 4th version of my personal website",
+			"project_tech": ["HTML/Jade","SASS","Javascript","Responsive","Grunt Automation"],
+			"project_achievements": [
+				"Complete rework, for design and translation needs",
+				"Responsivity and CSS transitions",
+				"Front-end automation with Grunt",
+				"Designed with Sketch"
+			],
+			"project_url" : "http://www.yojimbo.fr"
+		},{
+			"id": "project_abcc",
+			"title": "ABC (Aus. TV)",
+			"project_details1": "Januray 2014 - ABC, Sydney (Australia)",
+			"project_details2": "3 month contract in the dev team, to help stuffing their home-made CMS",
+			"project_tech": ["HTML","SASS/Compass","Javascript","FreeMarker","Responsive","Grunt Automation","Git"],
+			"project_achievements": [
+				"Template creation for internal CMS",
+				"jQuery plugins"
+			],
+			"project_url" : "http://www.abc.net.au"
+		},{
+			"id": "project_aapm",
+			"title": "AAP Multimedia",
+			"project_details1": "October 2013 to December 2013 - Panthacorp, Manly (Australia)",
+			"project_details2": "3 month contract, webapp development",
+			"project_tech": ["HTML","SASS/Compass", "AngularJS", "Responsive", "Grunt Automation", "Git"],
+			"project_achievements": [
+				"AngularJS front-end development, to build a media selling webapp for AAP (Australian Assiciated PRess)",
+				"First real-world Git usage",
+				"First Agile experience"
+			],
+			"project_url" : "http://www.aap.com.au"
+		},{
+			"id": "project_kube",
+			"title": "KubeDesign",
+			"project_details1": "March 2013 - Freelance",
+			"project_details2": "Helping a couple of friends to start their company",
+			"project_tech": ["HTML","SASS","Javascript"],
+			"project_achievements": [],
+			"project_url" : "http://www.kubedesign.fr"
+		},{
+			"id": "project_m6b2",
+			"title": "M6 Boutique rework",
+			"project_details1": "October 2012 to July 2013 - Ventadis, Paris (France)",
+			"project_details2": "Lead front-end in a big e-commerce company",
+			"project_tech": ["HTML","SASS/Compass", "Javascript", "ASP.Net templating", "TFS"],
+			"project_achievements": [
+				"Lead front-end on a big website (Website side of home-shopping TV program (on the 2nd biggest channel in France): 4M page view/month, 600 000 UV/month)",
+				"Front-end part of a .Net complete rework",
+				"Introduction of SASS and Compass technologies, automatic spriting set up",
+				"Complete Javascript rewrite, big JS/CSS optimizations",
+				"Image optimization training for graphic department",
+				"(Still under development, so not yet visible)"
+			],
+			"project_url" : "http://www.m6boutique.com"
+		},{
+			"id": "project_mgd2",
+			"title": "MisterGoodDeal rework",
+			"project_details1": "May 2012 to October 2012 - Ventadis, Paris (France)",
+			"project_details2": "Lead front-end in a big e-commerce company",
+			"project_tech": ["HTML","SASS/Compass", "Javascript", "ASP.Net templating", "TFS"],
+			"project_achievements": [
+				"Lead front-end on a big website (White goods, Top 10 e-commerce website in France: 2.5M UV/month, 1.5M customers)",
+				"Front-end part of a .Net complete rework",
+				"Introduction of SASS and Compass technologies, automatic spriting set up",
+				"Complete Javascript rewrite, big JS/CSS optimizations",
+				"Image optimization training for graphic department"
+			],
+			"project_url" : "http://www.mistergooddeal.com"
+		},{
+			"id": "project_bstv",
+			"title": "BestOfShopping rework",
+			"project_details1": "October 2011 to May 2012 - Ventadis, Paris (France)",
+			"project_details2": "Lead front-end in a big e-commerce company",
+			"project_tech": ["HTML","CSS", "Javascript", "PHP templating", "SVN"],
+			"project_achievements": [
+				"Templating and theming for an experimental trial of Drupal in order to test its potential use to all other websites"
+			]
+		},{
+			"id": "project_lcac",
+			"title": "le-cac.fr",
+			"project_details1": "December 2012 - Freelance",
+			"project_details2": "Chartered accountant office website",
+			"project_tech": ["HTML","SASS", "Javascript", "PHP Backend"],
+			"project_achievements": [
+				"Dev & Design",
+				"Custom administration tools",
+				"Client training"
+			],
+			"project_url": "http://www.le-cac.fr"
+		},{
+			"id": "project_yj11",
+			"title": "Yojimbo.fr - Update 2011",
+			"project_details1": "September 2011 - Personal work",
+			"project_details2": "Visual & content update",
+			"project_tech": ["HTML","SASS/Compass", "Javascript"],
+			"project_achievements": [
+				"Dev & Design",
+				"Optimizations (Especially Google Pagespeed Service use)"
+			],
+			"project_url" : "http://www.yojimbo.fr/2011/"
+		},{
+			"id": "project_appw",
+			"title": "AppWall",
+			"project_details1": "August 2010",
+			"project_details2": "Android app showcase website",
+			"project_tech": ["HTML","CSS","Javascript"],
+			"project_achievements": [
+				"Front-end, Back-end, design"
+			],
+			"project_url" : "http://www.appwall.fr"
+		},{
+			"id": "project_kidk",
+			"title": "Kidoikoiaki",
+			"project_details1": "August 2010",
+			"project_details2": "Android app design",
+			"project_tech": [],
+			"project_achievements": [
+				"Android app design"
+			],
+			"project_url" : "https://play.google.com/store/apps/details?id=kidoikoiaki.main"
+		},{
+			"id": "project_m6b1",
+			"title": "M6 Boutique",
+			"project_details1": "October 2009 to October 2011 - Ventadis, Paris (France)",
+			"project_details2": "Lead front-end in a big e-commerce company",
+			"project_tech": ["HTML","CSS","Javascript","Images optimizations","ASP","PHP"],
+			"project_achievements": [
+				"Lead front-end on a big website (Website side of home-shopping TV program (on the 2nd biggest channel in France): 4M page view/month, 600 000 UV/month)",
+				"Full HTML/CSS rework, Image optimizations",
+				"Front-end maintenance and evolutions"
+			],
+			"project_url" : "http://www.m6boutique.com"
+		},{
+			"id": "project_mgd1",
+			"title": "MisterGoodDeal",
+			"project_details1": "October 2009 to October 2011 - Ventadis, Paris (France)",
+			"project_details2": "Lead front-end in a big e-commerce company",
+			"project_tech": ["HTML","CSS","Javascript","Images optimizations","ASP"],
+			"project_achievements": [
+				"Lead front-end on a big website (White goods, Top 10 e-commerce website in France: 2.5M UV/month, 1.5M customers)",
+				"Full HTML/CSS rework, Image optimizations",
+				"Front-end maintenance and evolutions"
+			]
+		},{
+			"id": "project_yj09",
+			"title": "Yojimbo.fr - Update 2009",
+			"project_details1": "September 2009 - Personal work",
+			"project_details2": "Portfolio + Blog development",
+			"project_tech": ["HTML","CSS","Javascript","PHP"],
+			"project_achievements": [
+				"Dev & Design",
+				"Custom blogging tool",
+				"Flickr feed integration"
+			]
+		},{
+			"id": "project_youn",
+			"title": "youNco",
+			"project_details1": "September 2008 to September 2009 - Nala Multimedia, Limoges (France)",
+			"project_details2": "Dating website with a ",
+			"project_tech": ["HTML","CSS","Javascript","PHP/Mysql"],
+			"project_achievements": [
+				"Front and back-end development on younco.com (PHP / HTML / CSS / Javascript), with inputs on design and development processes",
+				"Login / Register, Edit profile, Sponsorship, with automatic contact adding (from various sources, Facebook, Gmail ..)",
+				"Custom newsletter sending system, Q&A Management system",
+				"Implementation of an SMS sending service, of different payment methods (Credit card, Paypal, 1-click payments ..)",
+				"Promoting the concept at the Internet Show in Paris"
+			]
+		},{
+			"id": "project_dioc",
+			"title": "The diocese of Limoges",
+			"project_details1": "September 2008 - Freelance",
+			"project_details2": "Website for the diocese of Limoges",
+			"project_tech": ["HTML","CSS","Javascript","PHP/Mysql"],
+			"project_achievements": [
+				"Front-end & Back-end dev",
+				"Administration tools"
+			],
+			"project_url" : "http://www.limoges-catholique.fr/"
+		},{
+			"id": "project_feui",
+			"title": "Le Mas de Feuillade",
+			"project_details1": "July 2008 - Nala Multimedia, Limoges (France)",
+			"project_details2": "Website for a group hosting country house",
+			"project_tech": ["HTML","CSS","Javascript","PHP/Mysql"],
+			"project_achievements": [
+				"Front & Back-end development"
+			],
+			"project_url" : "http://www.masfeuillade.com/"
+		},{
+			"id": "project_cara",
+			"title": "Caravaning Limousin",
+			"project_details1": "May 2008 - Nala Multimedia, Limoges (France)",
+			"project_details2": "Campervan renting website",
+			"project_tech": ["HTML","CSS","Javascript","PHP/Mysql"],
+			"project_achievements": [
+				"Front & Back-end development, partial design",
+				"Caravan rental booking script"
+			],
+			"project_url" : "http://www.caravaning-limousin.com/"
+		},{
+			"id": "project_troc",
+			"title": "Trocadore",
+			"project_details1": "February 2008 - Nala Multimedia, Limoges (France)",
+			"project_details2": "Showcase website for an antique furnitures shop",
+			"project_tech": ["HTML","CSS","Javascript","PHP/Mysql"],
+			"project_achievements": [
+				"Back-end development, import scripts to get data from specific software"
+			],
+			"project_url" : "http://trocadore.com/"
+		},{
+			"id": "project_ries",
+			"title": "Ries Invest Consulting",
+			"project_details1": "December 2007 - Nala Multimedia, Limoges (France)",
+			"project_details2": "Real estate company website",
+			"project_tech": ["HTML","CSS","Javascript","PHP/Mysql"],
+			"project_achievements": [
+				"Front-end & Back-end dev",
+				"Administration tools"
+			]
+		},{
+			"id": "project_plau",
+			"title": "Planète Auto",
+			"project_details1": "September 2007 - Nala Multimedia, Limoges (France)",
+			"project_details2": "Car selling company website",
+			"project_tech": ["HTML","CSS","Javascript","PHP/Mysql"],
+			"project_achievements": [
+				"Front & Back-end development, XML import scripts for car fleet management"
+			],
+			"project_url" : "http://www.limoges-autos.com"
+		},{
+			"id": "project_yj07",
+			"title": "Yojimbo.fr",
+			"project_details1": "September 2007 - Personal work",
+			"project_details2": "1st version of my personal website",
+			"project_tech": ["HTML","Flash"],
+			"project_achievements": [
+				"Flash design & dev"
+			],
+			"project_url" : "http://www.yojimbo.fr/2007/"
+		},{
+			"id": "project_lkct",
+			"title": "linkCity",
+			"project_details1": "September 2006",
+			"project_details2": "Web-based game concept",
+			"project_tech": ["HTML","Flash"],
+			"project_achievements": [
+				"Flash design & dev"
+			]
+		}
+
+	]
+}
+
+

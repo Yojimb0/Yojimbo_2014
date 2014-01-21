@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-cli": "latest",
+    "grunt-env": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-open": "~0.2.2",
+    "grunt-svgmin": "~0.3.0",
+    "grunt-autoprefixer": "~0.6.4",
+    "grunt-contrib-jade": "~0.9.1"
+  }
+}

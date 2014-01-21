@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+	include ./head.html
+
+body.disable_transitions
+
+	div.page
+		include ./main_content.html
+		
+		
+	each item in data
+		article.project(id=item.id)
+			div.project_inner
+				h1= item.title
+				div.scrollable_area_mask
+					div.scrollable_area
+						div.project_content
+							div.project_image
+							table
+								tr
+									td
+										div.project_details
+											h2 Project details
+											p!= item.project_details1 + '<br>' + item.project_details2
+									td
+										div.project_tech
+											h2 Technologies &amp; Trends
+											each tech in item.project_tech
+												span= tech
+							if item.project_achievements.length > 0
+								div.project_achievements
+									h2 Tasks / Project achievements
+									ul
+										each achievement in item.project_achievements
+											li= achievement
+							div.project_buttons
+								if item.project_url
+									a.project_view(href=item.project_url) View website
+								a.project_close Close card
+
+	div.overlay
+
+	div.scrollbar_measure
+		div
+
+	script(src="js/lib/jquery.js")
+	script(src="js/lib/tse.jquery.js")
+	script(src="js/main.js")

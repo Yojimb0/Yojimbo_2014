@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>flash</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Tech" sketch:type="MSLayerGroup" transform="translate(-60.000000, -19.000000)">
+            <g id="Adobe_Photoshop_CS6_icon-copy" transform="translate(61.000000, 20.000000)" sketch:type="MSShapeGroup">
+                <rect id="Rectangle" fill="#363636" x="0" y="0" width="18" height="18"></rect>
+                <rect id="Rectangle" fill="#E8E8E8" x="1.35" y="1.35" width="15.13704" height="15.1372068"></rect>
+                <path d="M5.73235411,5.7036192 L9.94975462,5.7036192 L9.94975462,6.79859853 L7.0659742,6.79859853 L7.0659742,8.81510175 L9.75464516,8.81510175 L9.75464516,9.91008108 L7.0659742,9.91008108 L7.0659742,13.010625 L5.73235411,13.010625 L5.73235411,5.7036192" id="Fill-110" fill="#363636"></path>
+                <path d="M10.6325261,5.31340027 L11.97675,5.31340027 L11.97675,13.010625 L10.6325261,13.010625 L10.6325261,5.31340027 Z" id="Fill-114" fill="#363636"></path>
+            </g>
+        </g>
+    </g>
+</svg>
