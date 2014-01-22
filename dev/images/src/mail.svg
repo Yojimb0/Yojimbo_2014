@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>mail</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Mail" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)">
+            <path d="M0.228323699,30 C0.228323699,13.4314567 13.67919,0 30.2716763,0 C46.8641626,0 60.3150289,13.4314567 60.3150289,30 C60.3150289,46.5685433 46.8641626,60 30.2716763,60 C13.67919,60 0.228323699,46.5685433 0.228323699,30 Z" fill="#DDDDDD" sketch:type="MSShapeGroup"></path>
+            <path d="M35.6224062,31.6384006 L48,40.5764264 L48,20 L35.6224062,31.6384006 Z M14,20 L14,40.5764264 L26.3773281,31.6371491 L14,20 Z M31,35.9844891 L28.0448555,33.2065217 L14,42 L48,42 L33.9548125,33.2065217 L31,35.9844891 Z M46.98,20 L15.02,20 L31,32.4549304 L46.98,20 Z" id="Shape" fill="#AAAAAA" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

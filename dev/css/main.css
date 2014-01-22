@@ -227,6 +227,12 @@ a { text-decoration: none; -webkit-transition: color .3s ease-in-out; transition
 
 .c h1 { text-align: center; }
 
+.c .contact { text-align: center; }
+
+.c .contact a { display: inline-block; text-align: center; width: 20%; font-size: 0; }
+
+.c .contact a img { display: block; width: 80%; margin: auto; }
+
 .c svg { margin: 20px auto; }
 
 /* Zone W

@@ -61,15 +61,15 @@ module.exports = (grunt) ->
 				# jshintrc: '.jshintrc'
 			dev: 'dev/js/*.js'
 
-		#svgmin:
-		#	dev:
-		#		files: [{
-		#			expand: true,
-		#			cwd: 'dev/images/src',
-		#			src: ['**/*.svg'],
-		#			dest: 'dev/images/',
-		#			ext: '.svg'
-		#		}]
+		svgmin:
+			dev:
+				files: [{
+					expand: true,
+					cwd: 'dev/images/src',
+					src: ['**/*.svg'],
+					dest: 'dev/images/',
+					ext: '.svg'
+				}]
 
 
 		autoprefixer:
@@ -94,7 +94,7 @@ module.exports = (grunt) ->
 
 	grunt.registerTask 'default', ['jshint']
 
-	grunt.registerTask 'server', ['connect:dev', 'jade', 'sass', 'autoprefixer', 'jshint', 'open:dev', 'watch']
+	grunt.registerTask 'server', ['connect:dev', 'jade', 'sass', 'autoprefixer', 'jshint', 'svgmin', 'open:dev', 'watch']
 
 
 
