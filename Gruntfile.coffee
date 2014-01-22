@@ -1,7 +1,5 @@
 module.exports = (grunt) ->
 	
-	# require('matchdep').filterDev('grunt-*').forEach grunt.loadNpmTask
-
 	grunt.loadNpmTasks 'grunt-contrib-watch'
 	grunt.loadNpmTasks 'grunt-contrib-jshint'
 	grunt.loadNpmTasks 'grunt-contrib-sass'
@@ -63,20 +61,15 @@ module.exports = (grunt) ->
 				# jshintrc: '.jshintrc'
 			dev: 'dev/js/*.js'
 
-		svgmin:
-			# options:
-			# 	plugins: [
-			# 		# { removeViewBox: false },
-			# 		# { removeUselessStrokeAndFill: false }
-			# 	]
-			dev:
-				files: [{
-					expand: true,
-					cwd: 'dev/images/src',
-					src: ['**/*.svg'],
-					dest: 'dev/images/',
-					ext: '.svg'
-				}]
+		#svgmin:
+		#	dev:
+		#		files: [{
+		#			expand: true,
+		#			cwd: 'dev/images/src',
+		#			src: ['**/*.svg'],
+		#			dest: 'dev/images/',
+		#			ext: '.svg'
+		#		}]
 
 
 		autoprefixer:
@@ -101,8 +94,7 @@ module.exports = (grunt) ->
 
 	grunt.registerTask 'default', ['jshint']
 
-	#grunt.registerTask 'server', ['sass','connect','watch']
-	grunt.registerTask 'server', ['connect:dev', 'jade', 'sass', 'autoprefixer', 'jshint', 'svgmin', 'open:dev', 'watch']
+	grunt.registerTask 'server', ['connect:dev', 'jade', 'sass', 'autoprefixer', 'jshint', 'open:dev', 'watch']
 
 
 

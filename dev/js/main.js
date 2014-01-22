@@ -19,6 +19,7 @@ $(function(){
 
 	// TODO
 	$( window ).resize(function() {
+		console.log('window.resize()');
 		updateScrollArea($sa, scrollWidth);
 	});
 

@@ -444,7 +444,7 @@ a { text-decoration: none; -webkit-transition: color .3s ease-in-out; transition
 
 /* MEDIA QUERIES
 ---------------------------------------*/
-@media screen and (max-width: 855px) { .c { width: 80%; }
+@media screen and (max-width: 855px) { .c { width: 80%; padding: 0 30px; }
   .d { width: 90%; right: 90%; background: #333333; }
   .w { width: 90%; left: 90%; background: #333333; }
   .d.aside_open { right: 10%; border-right: 1px solid #000; }
@@ -453,7 +453,7 @@ a { text-decoration: none; -webkit-transition: color .3s ease-in-out; transition
   .w.aside_open .project_list { opacity: 1; }
   .project_list { padding: 5% 11% 5% 11%; }
   .project_inner .project_image { display: none; } }
-@media screen and (min-width: 856px) { .c { width: 20%; }
+@media screen and (min-width: 856px) { .c { width: 20%; padding: 0 30px; }
   .d { width: 40%; right: 60%; background: #333333; }
   .w { width: 40%; left: 60%; background: #333333; }
   .aside_button { cursor: default; } }

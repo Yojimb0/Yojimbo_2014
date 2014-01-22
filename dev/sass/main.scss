@@ -178,7 +178,7 @@ $timeline: #666;
 	@media screen and (max-width: 855px){
 		$wm: 80%;
 		$wa: ((100% - $wm) / 2); // Si 80 = 10%
-		.c{width:$wm;}
+		.c{width:$wm;padding: 0 30px;}
 		.d{width:(100 - $wa);right:(100 - $wa);background:$black;}
 		.w{width:(100 - $wa);left: (100 - $wa);background:$black;}
 		.d.aside_open{right:$wa;border-right: 1px solid #000;}
@@ -197,7 +197,7 @@ $timeline: #666;
 	@media screen and (min-width: 856px){
 		$wm: 20%;
 		$wa: ((100% - $wm) / 2); // Si 20 = 40%
-		.c{width:$wm;}
+		.c{width:$wm;padding: 0 30px;}
 		.d{width:$wa;right:(100 - $wa);background:$black;}
 		.w{width:$wa;left: (100 - $wa);background:$black;}
 
