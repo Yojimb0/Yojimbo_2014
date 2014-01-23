@@ -11,6 +11,8 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-static-inline'
 	grunt.loadNpmTasks 'grunt-contrib-imagemin'
 	grunt.loadNpmTasks 'grunt-contrib-copy'
+	grunt.loadNpmTasks 'grunt-contrib-clean'
+	grunt.loadNpmTasks 'grunt-contrib-uglify'
 
 
 	grunt.initConfig
@@ -89,11 +91,11 @@ module.exports = (grunt) ->
 					data: grunt.file.readJSON("data.json")
 
 		staticinline:
-			dist:
+			dev:
 				files:
-					'dev/index.html': 'dev/index.html'
+					'dist/index.html': 'dist/index.html'
 
-		clean: ["dist"]
+		clean: ["dist/*"]
 
 		imagemin:
 			dist:
@@ -106,18 +108,24 @@ module.exports = (grunt) ->
 
 		copy:
 			main:
-				files: [
-					{expand: true, src: ['dev/index.html'], dest: 'dist/index.html'},
-					{expand: true, src: ['dev/js/main.min.js'], dest: 'dist/js/main.js'},
-					{expand: true, src: ['dev/css/main.css'], dest: 'dist/css/main.css'},
-					{expand: true, src: ['dev/css/visitor1.ttf'], dest: 'dist/css/visitor1.ttf'},
-					{expand: true, src: ['dev/images/*'], dest: 'dist/images/'},
-					{expand: true, src: ['dev/cv/'], dest: 'dist/cv/'}
-				]
+				files: [{
+					expand: true,
+					cwd: 'dev',
+					dest: 'dist',
+					src: [
+						'index.html',
+						'js/main.js',
+						'css/main.css',
+						'css/visitor1/ttf',
+						'images/*.{gif,webp,png,jpg,svg}',
+						'cv/'
+					]
+				}]
 
 		uglify:
-			files:
-				'dev/js/main.min.js': ['dev/js/main.js']
+			dist:
+				files:
+					'dist/js/main.js': ['dist/js/main.js']
 
 
 
@@ -132,7 +140,7 @@ module.exports = (grunt) ->
 		'connect:dev',
 		'jade',
 		'sass', 'autoprefixer',
-		'jshint', 'staticinline',
+		'jshint',
 		'svgmin',
 		'open:dev', 'watch'
 	]
@@ -141,10 +149,10 @@ module.exports = (grunt) ->
 		'clean',
 		'jade',
 		'sass', 'autoprefixer',
-		'jshint', 'uglify',
+		'jshint', 
 		'svgmin',
 		'copy',
-		'staticinline',
+		'uglify', 'staticinline',
 		'imagemin',
 	]
 
