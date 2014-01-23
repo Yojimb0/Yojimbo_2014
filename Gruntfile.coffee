@@ -58,7 +58,6 @@ module.exports = (grunt) ->
 				globals:
 				    jQuery: true
 				    debugger: true
-				# jshintrc: '.jshintrc'
 			dev: 'dev/js/*.js'
 
 		svgmin:
