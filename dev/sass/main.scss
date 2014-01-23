@@ -3,43 +3,26 @@
 	@import 'normalize';
 	@import 'tse';
 	
+	// Sizes
+	$imageHeight: 140px;
 
-// Cool
-$aqua:  #7FDBFF;
-$blue:  #0074D9;
-$navy:  #001F3F;
-$teal:  #39CCCC;
-$green: #2ECC40;
-$olive: #3D9970;
-$lime:  #01FF70;
+	// Colors
+	$white:  #fff;
+	$silver: #eee;
+	$gray:   #aaa;
+	$black:  #333;
+	$timeline: #666;
 
-// Warm
-$yellow:  #FFDC00;
-$orange:  #FF851B;
-$red:     #FF4136;
-$fuchsia: #F012BE;
-$purple:  #B10DC9;
-$maroon:  #85144B;
-
-// Gray Scale
-$white:  #fff;
-$silver: #eee;
-$gray:   #aaa;
-$black:  #333;
-
-// My own
-$timeline: #666;
-
-// Fonts
-%f_c_title{ font-family: 'Josefin Sans', sans-serif; font-size: 3rem;font-weight: 100 }
-%f_d_title{ font-family: 'Josefin Sans', sans-serif; font-size: 2rem;font-weight: 100 }
-%f_d_content{ font-family: 'Josefin Sans', serif; font-size: 1.8rem;font-weight: 100 }
-%f_w_list{ font-family: 'visitor', cursive; font-size: 2rem }
-%f_aside_buttons{font-family: 'visitor', cursive; font-size: 2.2rem}
-%f_p_title{ font-family: 'visitor', cursive; font-size: 2.2rem }
-%f_p_subtitle{ font-family: 'visitor', cursive; font-size: 1.6rem }
-%f_p_content{ font-family: 'Josefin Sans', sans-serif; font-size: 1.8rem }
-%f_p_buttons{ font-family: 'visitor', cursive; font-size: 1.8rem }
+	// Fonts
+	%f_c_title{ font-family: 'Josefin Sans', sans-serif; font-size: 3rem;font-weight: 100 }
+	%f_d_title{ font-family: 'Josefin Sans', sans-serif; font-size: 2rem;font-weight: 100 }
+	%f_d_content{ font-family: 'Josefin Sans', serif; font-size: 1.8rem;font-weight: 100 }
+	%f_w_list{ font-family: 'visitor', cursive; font-size: 2rem }
+	%f_aside_buttons{font-family: 'visitor', cursive; font-size: 2.2rem}
+	%f_p_title{ font-family: 'visitor', cursive; font-size: 2.2rem }
+	%f_p_subtitle{ font-family: 'visitor', cursive; font-size: 1.6rem }
+	%f_p_content{ font-family: 'Josefin Sans', sans-serif; font-size: 1.8rem }
+	%f_p_buttons{ font-family: 'visitor', cursive; font-size: 1.8rem }
 
 
 /* DEFAULTS
@@ -57,7 +40,8 @@ $timeline: #666;
 	body{background:$silver;height:100%}
 	a {text-decoration: none;-webkit-transition: color .3s ease-in-out;transition: color .3s ease-in-out;}
 
-/* SCROLLBARS
+/* SCROLLBARS TWEAKS
+/* See https://github.com/Yojimb0/Yojimbo_2014
 ---------------------------------------*/
 	#scrollbar_measure{width:50px;height:50px;overflow:scroll;position:absolute;top:-200px;left:-200px;}
 	#scrollbar_measure div{height: 100%;width: 100%}
@@ -69,27 +53,14 @@ $timeline: #666;
 	.project_inner .scrollable_area{max-height: 80%;}
 
 
-/* General Layout
+/* Main layout
 ---------------------------------------*/
 	.page{position: absolute;top:0;bottom:0;left: 0;right:0;margin:auto;overflow:hidden;}
 	.c{margin:auto;text-align:center}
 	.d{position: absolute;top:0;bottom:0;height:100%;color:$silver;transition: right 0.5s ease-in-out;}
 	.w{position: absolute;top:0;bottom:0;height:100%;color:$silver;transition: left  0.5s ease-in-out;}
-	
-	// UI Asides
-	.aside_button{width: 10%;position: absolute;top:0;border:none;padding:10px 0;margin:0;z-index: 2;outline:0;
-		background:none;color:$silver;text-transform: uppercase;text-align: center;@extend %f_aside_buttons;}
-	.aside_button span{display: block;height: 2.6rem;}
-	
-	.d .aside_button{right:0}
-	.d .d_content{padding:10%}
-	.d h2{@extend %f_d_title;}
-	.d p{@extend %f_d_content}
-	.d p strong{color:#fff}
 
-	.w .aside_button{left:0}
-
-	// UI Centre
+	// <section> .c
 	.c h1{@extend %f_c_title;text-align: center}
 	.c .contact{text-align:center}
 	.c .contact a{display: inline-block;text-align: center;width: 20%;font-size: 0;}
@@ -97,20 +68,35 @@ $timeline: #666;
 	.c svg{margin:20px auto;}
 
 
-/* Zone W
+/* Both <aside>
 ---------------------------------------*/
+	.aside_button{width: 10%;position: absolute;top:0;border:none;padding:10px 0;margin:0;z-index: 2;outline:0;background:none;color:$silver;text-transform: uppercase;text-align: center;@extend %f_aside_buttons;}
+	.aside_button span{display: block;height: 2.6rem;}
+
+/* <aside> .d (Details)
+---------------------------------------*/
+	.d .aside_button{right:0}
+	.d .d_content{padding:10%}
+	.d h2{@extend %f_d_title;}
+	.d p{@extend %f_d_content}
+	.d p strong{color:$white}
+
+/* <aside> .w (Work)
+---------------------------------------*/
+	.w .aside_button{left:0}
+
 	.project_list{list-style: none;margin:0;padding: 10%;@extend %f_w_list;}
 	.project_list:after{content:'';position: absolute;top:0;left:50%;height:100%;width:3px;background:$timeline;transform: translateX(-50%);z-index: 0}
-	  .project_link_wrapper{display:block;position: relative;padding:0.3rem 0;}
-	    .project_link{display: block;position: relative;z-index: 1;padding:8px 7px 6px;color:$white;cursor:pointer;}
-	      .project_name{text-transform:uppercase;line-height: 1.9rem}
-	  .project_year_wrapper{display:block;position: relative;padding:1rem 0;}
-	    .project_year{position: relative;float: left;margin-left:50%;display:block;padding:2px 4px;background:$black;border:2px solid $timeline;font-size:1.6rem;color:$timeline;transform: translateX(-50%);z-index: 1;}
+	.project_link_wrapper{display:block;position: relative;padding:0.3rem 0;}
+	.project_link{display: block;position: relative;z-index: 1;padding:8px 7px 6px;color:$white;cursor:pointer;}
+	.project_name{text-transform:uppercase;line-height: 1.9rem}
+	.project_year_wrapper{display:block;position: relative;padding:1rem 0;}
+	.project_year{position: relative;float: left;margin-left:50%;display:block;padding:2px 4px;background:$black;border:2px solid $timeline;font-size:1.6rem;color:$timeline;transform: translateX(-50%);z-index: 1;}
 
-	  .project_link_wrapper:nth-of-type(odd){padding-left:45%;}
-	  .project_link_wrapper:nth-of-type(odd)  .project_link{float: left;text-align:left}
-	  .project_link_wrapper:nth-of-type(even){padding-right:45%;}
-	  .project_link_wrapper:nth-of-type(even) .project_link{float: right;text-align: right;}
+	.project_link_wrapper:nth-of-type(odd){padding-left:45%;}
+	.project_link_wrapper:nth-of-type(odd)  .project_link{float: left;text-align:left}
+	.project_link_wrapper:nth-of-type(even){padding-right:45%;}
+	.project_link_wrapper:nth-of-type(even) .project_link{float: right;text-align: right;}
 
 	.project_link_yj13,
 	.project_link_yj11,
@@ -121,37 +107,39 @@ $timeline: #666;
 
 /* PROJECT MODALS
 ---------------------------------------*/
-	.project {position: fixed;top: 50%;left: 50%;width: 50%;max-width: 630px;min-width: 320px;height: auto;z-index: 2000;
-		visibility:hidden;transform: translateX(-50%) translateY(-50%);backface-visibility: hidden;-webkit-backface-visibility: hidden;}
-	.overlay {position: fixed;width: 100%;height: 100%;top: 0;left: 0;visibility: hidden;z-index: 1000;
-		opacity: 0;background:$black;transition: all 0.3s;}
+	// Modal container
+	.project {position: fixed;top: 50%;left: 50%;width: 50%;max-width: 630px;min-width: 320px;height: auto;z-index: 2000;visibility:hidden;transform: translateX(-50%) translateY(-50%);backface-visibility: hidden;-webkit-backface-visibility: hidden;}
 	
-	.project_inner {color: #fff;position: relative;border-radius: 3px;margin: 0 auto;transform: scale(2);opacity: 0;transition: all 0.3s;}
+	// modal content
+	.project_inner {color: $white;position: relative;border-radius: 3px;margin: 0 auto;transform: scale(2);opacity: 0;transition: all 0.3s;}
 	.project_inner h1{margin: 0;height: 4rem;line-height: 4rem;text-align: center;border-radius: 3px 3px 0 0;@extend %f_p_title;}
-	.project_inner h2{margin:0;background:#fff;color:#ddd;padding:2px 8px;@extend %f_p_subtitle;}
-	.project_inner  .project_image{width:400px;height:140px;background:#aaa;margin:10px auto 0}
+	.project_inner h2{margin:0;background:$white;color:#ddd;padding:2px 8px;@extend %f_p_subtitle;}
+	.project_inner  .project_image{width:400px;height:140px;background:$gray;margin:10px auto 0}
 	.project_inner table{width:100%;margin:10px 0}
 	.project_inner td{width:50%;vertical-align:top;padding:0 4px}
 	.project_details p{margin: 7px 8px 0;@extend %f_p_content;}
-	.project_tech span{display:inline-block;padding:2px 4px; margin: 4px 4px 0 0; border:2px solid #fff;@extend %f_p_subtitle;}
+	.project_tech span{display:inline-block;padding:2px 4px; margin: 4px 4px 0 0; border:2px solid $white;@extend %f_p_subtitle;}
 	.project_achievements{padding:0 4px 10px}
 	.project_achievements ul{list-style:square}
 	.project_achievements li{@extend %f_p_content;}
 	.project_buttons{text-align:center}
-	.project_buttons a{display:inline-block;padding:8px 0px;background:#fff;color:#ddd;width:30%;margin:0 0 20px;font-weight:bold;@extend %f_p_buttons;cursor: pointer}
+	.project_buttons a{display:inline-block;padding:8px 0px;background:$white;color:#ddd;width:30%;margin:0 0 20px;font-weight:bold;@extend %f_p_buttons;cursor: pointer}
 	.project_buttons .project_view{margin-right: 5px}
 	
-
 	// Showing class
 	.project_show {visibility:visible;}
 	.project_show .project_inner {transform: scale(1);opacity: 1;}
 	.project_show ~ .overlay {opacity: 0.7;visibility: visible;}
 
+	// Overlay
+	.overlay {position: fixed;width: 100%;height: 100%;top: 0;left: 0;visibility: hidden;z-index: 1000;opacity: 0;background:$black;transition: all 0.3s;}
+
+
 /* COLOR LOOP
 ---------------------------------------*/
 	// Color loop
-	$prjName: ("yj13", "abcc", "aapm", "kube", "m6b2", "mgd2", "lcac", "yj11", "appw", "m6b1", "mgd1", "yj09", "youn", "dioc", "feui", "cara", "troc", "ries", "plau", "yj07", "lkct");
-	$prjColo: (#eeeeee,#6F6F6F,#1272B3,#333333,#FD081B,#00B6E2,#61529A,#eeeeee,#99CC33,#FD081B,#00B6E2,#eeeeee,#F58023,#D9CEC1,#5AAA00,#8EAA00,#A3A3A3,#262935,#F5DD92,#eeeeee,#5AAA00);
+	$prjName: ("yj13", "abcc", "aapm", "kube", "m6b2", "mgd2", "bstv", "lcac", "yj11", "appw", "kidk", "m6b1", "mgd1", "yj09", "youn", "dioc", "feui", "cara", "troc", "ries", "plau", "yj07", "lkct");
+	$prjColo: (#EEEEEE,#6F6F6F,#1272B3,#333333,#FD081B,#00B6E2,#EC008C,#61529A,#EEEEEE,#99CC33,#99CC33,#FD081B,#00B6E2,#EEEEEE,#F58023,#D9CEC1,#5AAA00,#8EAA00,#A3A3A3,#262935,#F5DD92,#EEEEEE,#5AAA00);
 	@for $i from 0 to length($prjName) {
 		.project_link_#{nth($prjName, $i+1)} {background:darken(nth($prjColo, $i+1),10)}
 		#project_#{nth($prjName, $i+1)} {
@@ -169,7 +157,7 @@ $timeline: #666;
 
 /* MEDIA QUERIES
 ---------------------------------------*/
-	// mobiles
+	// small screens
 	@media screen and (max-width: 855px){
 		$wm: 80%;
 		$wa: ((100% - $wm) / 2); // Si 80 = 10%
@@ -179,8 +167,9 @@ $timeline: #666;
 		.d.aside_open{right:$wa;border-right: 1px solid #000;}
 		.w.aside_open{left: $wa;border-left: 1px solid #000;}
 		
-		// Masquer le contenu de la colonne W qui pourrait dépasser, la transition s'occupera de faire varier l'opa gentillement
-		.w .project_list{opacity: 0;transition: opacity 0.5s ease-in-out}
+		// Make the <aside> contents apear more smoothly
+		.w .project_list,
+		.d .d_content{opacity: 0;transition: opacity 0.5s ease-in-out}
 		.w.aside_open .project_list{opacity: 1}
 
 		.project_list{padding: 5% 11% 5% 11%;}
@@ -188,8 +177,7 @@ $timeline: #666;
 		// responsive state to JS
 		#responsive_state{display:none}
 	
-		/* PROJECT IMAGE
-		---------------------------------------*/
+		// Project image
 		.project_inner .project_image{display:none}
 	}
 
@@ -206,35 +194,32 @@ $timeline: #666;
 		// responsive state to JS
 		#responsive_state{display:block}
 
-		/* PROJECT IMAGE
-		---------------------------------------*/
-		$h: -140px;
+		// Project image
 		.project_inner .project_image{background: url(../images/sprite_captures.jpg) no-repeat}
-
 		#project_bstv .project_image{display:none}
-		#project_yj13 .project_image{background-position: 0 (20*$h)}
+		#project_yj13 .project_image{background-position: 0 (20*(-$imageHeight))}
 		#project_m6b2 .project_image,
-		#project_m6b1 .project_image{background-position: 0 (19*$h)}
-		#project_kidk .project_image{background-position: 0 (18*$h)}
-		#project_abcc .project_image{background-position: 0 (17*$h)}
-		#project_aapm .project_image{background-position: 0 (16*$h)}
-		#project_kube .project_image{background-position: 0 (15*$h)}
-		#project_lcac .project_image{background-position: 0 (14*$h)}
-		#project_yj11 .project_image{background-position: 0 (13*$h)}
-		#project_appw .project_image{background-position: 0 (12*$h)}
+		#project_m6b1 .project_image{background-position: 0 (19*(-$imageHeight))}
+		#project_kidk .project_image{background-position: 0 (18*(-$imageHeight))}
+		#project_abcc .project_image{background-position: 0 (17*(-$imageHeight))}
+		#project_aapm .project_image{background-position: 0 (16*(-$imageHeight))}
+		#project_kube .project_image{background-position: 0 (15*(-$imageHeight))}
+		#project_lcac .project_image{background-position: 0 (14*(-$imageHeight))}
+		#project_yj11 .project_image{background-position: 0 (13*(-$imageHeight))}
+		#project_appw .project_image{background-position: 0 (12*(-$imageHeight))}
 		#project_mgd2 .project_image,
-		#project_mgd1 .project_image{background-position: 0 (11*$h)}
-		#project_yj09 .project_image{background-position: 0 (10*$h)}
-		#project_youn .project_image{background-position: 0 ( 9*$h)}
-		#project_dioc .project_image{background-position: 0 ( 8*$h)}
-		#project_feui .project_image{background-position: 0 ( 7*$h)}
-		#project_cara .project_image{background-position: 0 ( 6*$h)}
-		#project_troc .project_image{background-position: 0 ( 5*$h)}
-		#project_ries .project_image{background-position: 0 ( 4*$h)}
-		#project_plau .project_image{background-position: 0 ( 3*$h)}
-		#project_yj07 .project_image{background-position: 0 ( 2*$h)}
-		#project_lkct .project_image{background-position: 0 ( 1*$h)}
-		//  #project_ .project_image{background-position: 0 ( 0*$h)}
+		#project_mgd1 .project_image{background-position: 0 (11*(-$imageHeight))}
+		#project_yj09 .project_image{background-position: 0 (10*(-$imageHeight))}
+		#project_youn .project_image{background-position: 0 ( 9*(-$imageHeight))}
+		#project_dioc .project_image{background-position: 0 ( 8*(-$imageHeight))}
+		#project_feui .project_image{background-position: 0 ( 7*(-$imageHeight))}
+		#project_cara .project_image{background-position: 0 ( 6*(-$imageHeight))}
+		#project_troc .project_image{background-position: 0 ( 5*(-$imageHeight))}
+		#project_ries .project_image{background-position: 0 ( 4*(-$imageHeight))}
+		#project_plau .project_image{background-position: 0 ( 3*(-$imageHeight))}
+		#project_yj07 .project_image{background-position: 0 ( 2*(-$imageHeight))}
+		#project_lkct .project_image{background-position: 0 ( 1*(-$imageHeight))}
+		//  #project_ .project_image{background-position: 0 ( 0*(-$imageHeight))}
 	}
 
 
