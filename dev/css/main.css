@@ -201,7 +201,7 @@ a { text-decoration: none; -webkit-transition: color .3s ease-in-out; transition
 
 .w .scrollable_area { height: 100%; }
 
-.project_inner .scrollable_area { max-height: 80vh; }
+.project_inner .scrollable_area { max-height: 80%; }
 
 /* General Layout
 ---------------------------------------*/
@@ -233,7 +233,7 @@ a { text-decoration: none; -webkit-transition: color .3s ease-in-out; transition
 
 .c .contact a img { display: block; width: 80%; margin: auto; }
 
-.c svg { margin: 20px auto; }
+.c svg { margin: 20px auto; display: none; }
 
 /* Zone W
 ---------------------------------------*/
@@ -462,6 +462,29 @@ a { text-decoration: none; -webkit-transition: color .3s ease-in-out; transition
 @media screen and (min-width: 856px) { .c { width: 20%; padding: 0 30px; }
   .d { width: 40%; right: 60%; background: #333333; }
   .w { width: 40%; left: 60%; background: #333333; }
-  .aside_button { cursor: default; } }
+  .aside_button { cursor: default; }
+  /* PROJECT IMAGE ---------------------------------------*/
+  .project_inner .project_image { background: url(../images/sprite_captures.jpg) no-repeat; }
+  #project_bstv .project_image { display: none; }
+  #project_yj13 .project_image { background-position: 0 -2800px; }
+  #project_m6b2 .project_image, #project_m6b1 .project_image { background-position: 0 -2660px; }
+  #project_kidk .project_image { background-position: 0 -2520px; }
+  #project_abcc .project_image { background-position: 0 -2380px; }
+  #project_aapm .project_image { background-position: 0 -2240px; }
+  #project_kube .project_image { background-position: 0 -2100px; }
+  #project_lcac .project_image { background-position: 0 -1960px; }
+  #project_yj11 .project_image { background-position: 0 -1820px; }
+  #project_appw .project_image { background-position: 0 -1680px; }
+  #project_mgd2 .project_image, #project_mgd1 .project_image { background-position: 0 -1540px; }
+  #project_yj09 .project_image { background-position: 0 -1400px; }
+  #project_youn .project_image { background-position: 0 -1260px; }
+  #project_dioc .project_image { background-position: 0 -1120px; }
+  #project_feui .project_image { background-position: 0 -980px; }
+  #project_cara .project_image { background-position: 0 -840px; }
+  #project_troc .project_image { background-position: 0 -700px; }
+  #project_ries .project_image { background-position: 0 -560px; }
+  #project_plau .project_image { background-position: 0 -420px; }
+  #project_yj07 .project_image { background-position: 0 -280px; }
+  #project_lkct .project_image { background-position: 0 -140px; } }
 
 /*# sourceMappingURL=main.css.map */

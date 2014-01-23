@@ -70,7 +70,7 @@ $timeline: #666;
 	.d .scrollable_area{height: 100%;}
 	.w .scrollable_area{height: 100%;}
 	// .w .scrollable_area > div:before{left:auto;right:10px}
-	.project_inner .scrollable_area{max-height: 80vh;}
+	.project_inner .scrollable_area{max-height: 80%;}
 	// .project_inner .scrollable_area > div:before{border-top-color:#fff}
 
 	// @keyframes scrollarrow {
@@ -105,7 +105,7 @@ $timeline: #666;
 	.c .contact{text-align:center}
 	.c .contact a{display: inline-block;text-align: center;width: 20%;font-size: 0;}
 	.c .contact a img{display: block;width: 80%;margin: auto;}
-	.c svg{margin:20px auto}
+	.c svg{margin:20px auto;display:none}
 	//.avatar{display:block;margin:20px auto}
 
 /* Zone W
@@ -175,6 +175,9 @@ $timeline: #666;
 		}
 	}
 
+
+
+
 /* MEDIA QUERIES
 ---------------------------------------*/
 	// mobiles
@@ -205,12 +208,54 @@ $timeline: #666;
 		.w{width:$wa;left: (100 - $wa);background:$black;}
 
 		.aside_button{cursor: default}
+
+		/* PROJECT IMAGE
+		---------------------------------------*/
+		$h: -140px;
+		.project_inner .project_image{background: url(../images/sprite_captures.jpg) no-repeat}
+
+		#project_bstv .project_image{display:none}
+		#project_yj13 .project_image{background-position: 0 (20*$h)}
+		#project_m6b2 .project_image,
+		#project_m6b1 .project_image{background-position: 0 (19*$h)}
+		#project_kidk .project_image{background-position: 0 (18*$h)}
+		#project_abcc .project_image{background-position: 0 (17*$h)}
+		#project_aapm .project_image{background-position: 0 (16*$h)}
+		#project_kube .project_image{background-position: 0 (15*$h)}
+		#project_lcac .project_image{background-position: 0 (14*$h)}
+		#project_yj11 .project_image{background-position: 0 (13*$h)}
+		#project_appw .project_image{background-position: 0 (12*$h)}
+		#project_mgd2 .project_image,
+		#project_mgd1 .project_image{background-position: 0 (11*$h)}
+		#project_yj09 .project_image{background-position: 0 (10*$h)}
+		#project_youn .project_image{background-position: 0 ( 9*$h)}
+		#project_dioc .project_image{background-position: 0 ( 8*$h)}
+		#project_feui .project_image{background-position: 0 ( 7*$h)}
+		#project_cara .project_image{background-position: 0 ( 6*$h)}
+		#project_troc .project_image{background-position: 0 ( 5*$h)}
+		#project_ries .project_image{background-position: 0 ( 4*$h)}
+		#project_plau .project_image{background-position: 0 ( 3*$h)}
+		#project_yj07 .project_image{background-position: 0 ( 2*$h)}
+		#project_lkct .project_image{background-position: 0 ( 1*$h)}
+		//  #project_ .project_image{background-position: 0 ( 0*$h)}
 	}
 
 
 
 
- // @import 'modal'
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
