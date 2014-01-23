@@ -53,6 +53,17 @@ I used a trick to bind/unbind the click event used to show/hide the 2 `<aside>`,
 > * [CSSTricks - Viewport sized typography](http://css-tricks.com/viewport-sized-typography/)
 > * [Get the responsive state in Javascript](http://stackoverflow.com/a/10364620)
 
+
+---
+### Scrollable areas
+My both `<aside>` are scollable (especially on small-screen). And I didn't want to have a scroll bar right in the middle
+of the website (the one from the left `<aside>`). So I decided to hide them.  
+To do that, I had to know the scrollbar with, and with a bit of Javascript, resize a wrapper around the scrollable content
+(set to overflow:hidden).  
+To get the width, I have 2 small `<div>` at the bottom of the HTML, with some CSS (Fixed width wrapper containing a percent width element).
+Once the page loaded, th Javascript calculates the pixel-width of the percent-width element, and then removes the cluster)
+
+
 ---
 ### Popups for projects
 
