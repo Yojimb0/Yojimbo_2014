@@ -1,6 +1,6 @@
 ## Yojimbo.fr - Update Jan. 2014
 
-Welcome on my website GitHub Repo. I just wanted to speak about the making of my website rework, and spend a bit of time to explain what choices I made, and why.
+Hi there ! Welcome here, take a seat. You're on the repository where my website sources are stored. I just finished my portfolio redesign, and I wanted to speak about it, and spend a bit of time to explain what choices I made, and why.
 
 ### HTML 5 / Jade
 
