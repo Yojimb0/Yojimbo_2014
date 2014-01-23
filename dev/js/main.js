@@ -5,11 +5,10 @@ $(function(){
 	var $win   = $(window),
 		$body  = $('body'),
 		$page  = $('.page', $body),
-		$main  = $('.main', $page),
 		$w     = $('.w', $page),
 		$d     = $('.d', $page),
-		$sa    = $('.scrollable_area', $page),
-		$paths = $('.c path', $main),
+		$sa    = $('.scrollable_area', $body),
+		$paths = $('.c path', $page),
 		smallScreen = false,
 		scrollWidth = null,
 		breakPoint = 855;
@@ -47,6 +46,7 @@ $(function(){
 		var $sbm  = $('#scrollbar_measure'),
 			wParent   = $sbm.width(),
 			wChildren = $('div', $sbm).width();
+		$sbm.remove();
 		return (wParent - wChildren);
 	}
 
