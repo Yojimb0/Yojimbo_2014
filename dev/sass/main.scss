@@ -59,26 +59,15 @@ $timeline: #666;
 
 /* SCROLLBARS
 ---------------------------------------*/
-	.scrollbar_measure{width:50px;height:50px;overflow:scroll;position:absolute;top:-200px;left:-200px;}
-	.scrollbar_measure div{height: 100%;width: 100%}
+	#scrollbar_measure{width:50px;height:50px;overflow:scroll;position:absolute;top:-200px;left:-200px;}
+	#scrollbar_measure div{height: 100%;width: 100%}
 	.scrollable_area_mask{overflow:hidden}
 	.scrollable_area{overflow-y: scroll;}
-	// .scrollable_area > div{position: relative}
-	// .scrollable_area > div:before{content:'';display: block;width: 1px;height: 1px;position: absolute;top:-10px;left:10px;
-	// 	border: 4px solid rgba(0, 0, 0, 0);border-top: #666 solid 7px;animation:scrollarrow 2s infinite linear;}
 
 	.d .scrollable_area{height: 100%;}
 	.w .scrollable_area{height: 100%;}
-	// .w .scrollable_area > div:before{left:auto;right:10px}
 	.project_inner .scrollable_area{max-height: 80%;}
-	// .project_inner .scrollable_area > div:before{border-top-color:#fff}
 
-	// @keyframes scrollarrow {
-	// 	0%   { opacity: 0;transform: translateY(100%) }
-	// 	10%  { opacity: 1;transform: translateY(200%) }
-	// 	20%  { opacity: 0;transform: translateY(300%) }
-	// 	100% { opacity: 0;transform: translateY(300%) }
-	// }
 
 /* General Layout
 ---------------------------------------*/
@@ -105,8 +94,8 @@ $timeline: #666;
 	.c .contact{text-align:center}
 	.c .contact a{display: inline-block;text-align: center;width: 20%;font-size: 0;}
 	.c .contact a img{display: block;width: 80%;margin: auto;}
-	.c svg{margin:20px auto;display:none}
-	//.avatar{display:block;margin:20px auto}
+	.c svg{margin:20px auto;}
+
 
 /* Zone W
 ---------------------------------------*/
@@ -196,6 +185,11 @@ $timeline: #666;
 
 		.project_list{padding: 5% 11% 5% 11%;}
 		
+		// responsive state to JS
+		#responsive_state{display:none}
+	
+		/* PROJECT IMAGE
+		---------------------------------------*/
 		.project_inner .project_image{display:none}
 	}
 
@@ -208,6 +202,9 @@ $timeline: #666;
 		.w{width:$wa;left: (100 - $wa);background:$black;}
 
 		.aside_button{cursor: default}
+
+		// responsive state to JS
+		#responsive_state{display:block}
 
 		/* PROJECT IMAGE
 		---------------------------------------*/
