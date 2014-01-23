@@ -62,7 +62,7 @@ I used a trick to bind/unbind the click event used to show/hide the 2 `<aside>`,
 
 ---
 ### SVG
-I wanted to have my avatar as SVG in the center area of the site, to simplify high density screens display.
+I wanted to have my avatar as SVG in the center area of the site, to simplify the handling of display on high-density screens.
 I also found some good social icons, that were made with Sketch, I modified them to fit the theme of the site.
 
 **Ressources**
