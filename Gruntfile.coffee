@@ -95,7 +95,15 @@ module.exports = (grunt) ->
 				files:
 					'dist/index.html': 'dist/index.html'
 
-		clean: ["dist/*"]
+		clean:
+			files: 
+				expand:	true,
+				cwd: 'dist/',
+				src: [
+					'**/*',
+					'!sftp-config.json'
+				]
+
 
 		imagemin:
 			dist:
@@ -116,7 +124,7 @@ module.exports = (grunt) ->
 						'index.html',
 						'js/main.js',
 						'css/main.css',
-						'css/visitor1/ttf',
+						'css/visitor1.ttf',
 						'images/*.{gif,webp,png,jpg,svg}',
 						'cv/'
 					]
@@ -126,8 +134,6 @@ module.exports = (grunt) ->
 			dist:
 				files:
 					'dist/js/main.js': ['dist/js/main.js']
-
-
 
 
 

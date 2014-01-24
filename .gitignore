@@ -6,3 +6,4 @@ designs/
 .DS_Store
 *.sublime-project
 *.sublime-workspace
+sftp-config
