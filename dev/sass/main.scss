@@ -62,7 +62,7 @@
 
 	.d .scrollable_area{height: 100%;}
 	.w .scrollable_area{height: 100%;}
-	.project_inner .scrollable_area{max-height: 80%;}
+	
 
 
 /* Main layout
@@ -137,7 +137,10 @@
 	.project_buttons{text-align:center}
 	.project_buttons a{display:inline-block;padding:8px 5px;background:$white;color:#ddd;width:30%;margin:0 0 20px;font-weight:bold;@extend %f_p_buttons;cursor: pointer}
 	.project_buttons .project_view{margin-right: 5px}
-	
+
+	// Styles over the scrollarea (Bottom shadow)
+	.project_inner .scrollable_area:after {content: '';display: block;position: absolute;bottom: 0;left: 0;background: #BADA55;width: 100%;height: 25px;}
+
 	// Showing class
 	.project_show {visibility:visible;}
 	.project_show .project_inner {transform: scale(1);opacity: 1;}
@@ -161,6 +164,7 @@
 			.project_close{background: darken(nth($prjColo, $i+1),10);color: lighten(nth($prjColo, $i+1),30)}
 			.project_inner h2{background: nth($prjColo, $i+1);color: darken(nth($prjColo, $i+1),15);}
 			&.project_show ~ .overlay {background: darken($black, 30);}
+			.project_inner .scrollable_area:after {box-shadow: inset 0 -22px 20px -11px darken(nth($prjColo, $i+1),20);}
 		}
 	}
 
@@ -189,6 +193,9 @@
 		
 		// responsive state to JS
 		#responsive_state{display:none}
+
+		// max-height of the popups
+		.project_inner .scrollable_area{max-height: 70vh;}
 	
 		// Project image
 		.project_inner .project_image{display:none}
@@ -201,11 +208,15 @@
 		.c{width:$wm;padding: 0 30px;}
 		.d{width:$wa;right:(100 - $wa);background:$black;}
 		.w{width:$wa;left: (100 - $wa);background:$black;}
-
+		
+		// Hiding cursors, because no events on the button in desktop mode
 		.aside_button{cursor: default}
 
 		// responsive state to JS
 		#responsive_state{display:block}
+
+		// max-height of the popups
+		.project_inner .scrollable_area{max-height: 80%;}
 
 		// Project image
 		.project_inner .project_image{background: url(../images/sprite_captures.jpg) no-repeat}
