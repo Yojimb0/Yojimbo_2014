@@ -1,0 +1,6 @@
+# humanstxt.org/
+# The humans responsible
+
+# TEAM
+
+    Pierre-Yves Pointereau -- Front-end development -- @yojimbow
