@@ -1,7 +1,6 @@
 /* SASS STUFF
 ---------------------------------------*/
 	@import 'normalize';
-	@import 'tse';
 	
 	// Sizes
 	$imageHeight: 140px;
@@ -29,8 +28,21 @@
 ---------------------------------------*/
 	@font-face {
 		font-family: 'visitor';
-		src: url('visitor1.ttf')  format('truetype');
+		src: url(/css/visitor1.ttf)  format('truetype');
 	}
+	@font-face {
+		font-family: 'Josefin Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Josefin Sans'), local('JosefinSans'), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v4/xgzbb53t8j-Mo-vYa23n5qRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+	}
+	@font-face {
+		font-family: 'Josefin Sans';
+		font-style: normal;
+		font-weight: 700;
+		src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/josefinsans/v4/C6HYlRF50SGJq1XyXj04zxAPw1J91axKNXP_-QX9CC8.woff) format('woff');
+	}
+
 
 	.disable_transitions * { transition: none !important; }
 	*{box-sizing: border-box;}
@@ -64,7 +76,7 @@
 	.c h1{@extend %f_c_title;text-align: center}
 	.c .contact{text-align:center}
 	.c .contact a{display: inline-block;text-align: center;width: 20%;font-size: 0;}
-	.c .contact a img{display: block;width: 80%;margin: auto;}
+	.c .contact a img{display: block;width: 80%;margin: auto;height: auto;}
 	.c svg{margin:20px auto;}
 
 
@@ -170,6 +182,7 @@
 		// Make the <aside> contents apear more smoothly
 		.w .project_list,
 		.d .d_content{opacity: 0;transition: opacity 0.5s ease-in-out}
+		.d.aside_open .d_content,
 		.w.aside_open .project_list{opacity: 1}
 
 		.project_list{padding: 5% 11% 5% 11%;}
