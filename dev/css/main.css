@@ -265,7 +265,7 @@ a { text-decoration: none; -webkit-transition: color .3s ease-in-out; transition
 
 .project_buttons { text-align: center; }
 
-.project_buttons a { display: inline-block; padding: 8px 0px; background: white; color: #ddd; width: 30%; margin: 0 0 20px; font-weight: bold; cursor: pointer; }
+.project_buttons a { display: inline-block; padding: 8px 5px; background: white; color: #ddd; width: 30%; margin: 0 0 20px; font-weight: bold; cursor: pointer; }
 
 .project_buttons .project_view { margin-right: 5px; }
 
@@ -284,21 +284,21 @@ a { text-decoration: none; -webkit-transition: color .3s ease-in-out; transition
 #project_yj13 .project_inner { background: #bbbbbb; }
 #project_yj13 .project_inner h1, #project_yj13 .project_view, #project_yj13 .project_close { background: #d4d4d4; color: white; }
 #project_yj13 .project_inner h2 { background: #eeeeee; color: #c8c8c8; }
-#project_yj13.project_show ~ .overlay { background: #a2a2a2; }
+#project_yj13.project_show ~ .overlay { background: black; }
 
 .project_link_abcc { background: #565656; }
 
 #project_abcc .project_inner { background: #3c3c3c; }
 #project_abcc .project_inner h1, #project_abcc .project_view, #project_abcc .project_close { background: #565656; color: #bcbcbc; }
 #project_abcc .project_inner h2 { background: #6f6f6f; color: #494949; }
-#project_abcc.project_show ~ .overlay { background: #232323; }
+#project_abcc.project_show ~ .overlay { background: black; }
 
 .project_link_aapm { background: #0d5485; }
 
 #project_aapm .project_inner { background: #093756; }
 #project_aapm .project_inner h1, #project_aapm .project_view, #project_aapm .project_close { background: #0d5485; color: #6ebcf0; }
 #project_aapm .project_inner h2 { background: #1272b3; color: #0b466d; }
-#project_aapm.project_show ~ .overlay { background: #041928; }
+#project_aapm.project_show ~ .overlay { background: black; }
 
 .project_link_kube { background: #1a1a1a; }
 
@@ -312,105 +312,105 @@ a { text-decoration: none; -webkit-transition: color .3s ease-in-out; transition
 #project_m6b2 .project_inner { background: #9e010d; }
 #project_m6b2 .project_inner h1, #project_m6b2 .project_view, #project_m6b2 .project_close { background: #d00212; color: #fea0a7; }
 #project_m6b2 .project_inner h2 { background: #fd081b; color: #b70110; }
-#project_m6b2.project_show ~ .overlay { background: #6b0109; }
+#project_m6b2.project_show ~ .overlay { background: black; }
 
 .project_link_mgd2 { background: #008daf; }
 
 #project_mgd2 .project_inner { background: #00647c; }
 #project_mgd2 .project_inner h1, #project_mgd2 .project_view, #project_mgd2 .project_close { background: #008daf; color: #7ce5ff; }
 #project_mgd2 .project_inner h2 { background: #00b6e2; color: #007896; }
-#project_mgd2.project_show ~ .overlay { background: #003b49; }
+#project_mgd2.project_show ~ .overlay { background: black; }
 
 .project_link_bstv { background: #b9006e; }
 
 #project_bstv .project_inner { background: #86004f; }
 #project_bstv .project_inner h1, #project_bstv .project_view, #project_bstv .project_close { background: #b9006e; color: #ff86ce; }
 #project_bstv .project_inner h2 { background: #ec008c; color: #a0005f; }
-#project_bstv.project_show ~ .overlay { background: #530031; }
+#project_bstv.project_show ~ .overlay { background: black; }
 
 .project_link_lcac { background: #4c4079; }
 
 #project_lcac .project_inner { background: #372f57; }
 #project_lcac .project_inner h1, #project_lcac .project_view, #project_lcac .project_close { background: #4c4079; color: #b8b0d5; }
 #project_lcac .project_inner h2 { background: #61529a; color: #423768; }
-#project_lcac.project_show ~ .overlay { background: #221d36; }
+#project_lcac.project_show ~ .overlay { background: black; }
 
 .project_link_yj11 { background: #d4d4d4; }
 
 #project_yj11 .project_inner { background: #bbbbbb; }
 #project_yj11 .project_inner h1, #project_yj11 .project_view, #project_yj11 .project_close { background: #d4d4d4; color: white; }
 #project_yj11 .project_inner h2 { background: #eeeeee; color: #c8c8c8; }
-#project_yj11.project_show ~ .overlay { background: #a2a2a2; }
+#project_yj11.project_show ~ .overlay { background: black; }
 
 .project_link_appw { background: #7aa329; }
 
 #project_appw .project_inner { background: #5c7a1f; }
 #project_appw .project_inner h1, #project_appw .project_view, #project_appw .project_close { background: #7aa329; color: #d6ebad; }
 #project_appw .project_inner h2 { background: #99cc33; color: #6b8f24; }
-#project_appw.project_show ~ .overlay { background: #3d5214; }
+#project_appw.project_show ~ .overlay { background: black; }
 
 .project_link_kidk { background: #7aa329; }
 
 #project_kidk .project_inner { background: #5c7a1f; }
 #project_kidk .project_inner h1, #project_kidk .project_view, #project_kidk .project_close { background: #7aa329; color: #d6ebad; }
 #project_kidk .project_inner h2 { background: #99cc33; color: #6b8f24; }
-#project_kidk.project_show ~ .overlay { background: #3d5214; }
+#project_kidk.project_show ~ .overlay { background: black; }
 
 .project_link_m6b1 { background: #d00212; }
 
 #project_m6b1 .project_inner { background: #9e010d; }
 #project_m6b1 .project_inner h1, #project_m6b1 .project_view, #project_m6b1 .project_close { background: #d00212; color: #fea0a7; }
 #project_m6b1 .project_inner h2 { background: #fd081b; color: #b70110; }
-#project_m6b1.project_show ~ .overlay { background: #6b0109; }
+#project_m6b1.project_show ~ .overlay { background: black; }
 
 .project_link_mgd1 { background: #008daf; }
 
 #project_mgd1 .project_inner { background: #00647c; }
 #project_mgd1 .project_inner h1, #project_mgd1 .project_view, #project_mgd1 .project_close { background: #008daf; color: #7ce5ff; }
 #project_mgd1 .project_inner h2 { background: #00b6e2; color: #007896; }
-#project_mgd1.project_show ~ .overlay { background: #003b49; }
+#project_mgd1.project_show ~ .overlay { background: black; }
 
 .project_link_yj09 { background: #d4d4d4; }
 
 #project_yj09 .project_inner { background: #bbbbbb; }
 #project_yj09 .project_inner h1, #project_yj09 .project_view, #project_yj09 .project_close { background: #d4d4d4; color: white; }
 #project_yj09 .project_inner h2 { background: #eeeeee; color: #c8c8c8; }
-#project_yj09.project_show ~ .overlay { background: #a2a2a2; }
+#project_yj09.project_show ~ .overlay { background: black; }
 
 .project_link_youn { background: #db670a; }
 
 #project_youn .project_inner { background: #aa5008; }
 #project_youn .project_inner h1, #project_youn .project_view, #project_youn .project_close { background: #db670a; color: #fcd4b5; }
 #project_youn .project_inner h2 { background: #f58023; color: #c35b09; }
-#project_youn.project_show ~ .overlay { background: #793906; }
+#project_youn.project_show ~ .overlay { background: black; }
 
 .project_link_dioc { background: #c6b5a1; }
 
 #project_dioc .project_inner { background: #b29c82; }
 #project_dioc .project_inner h1, #project_dioc .project_view, #project_dioc .project_close { background: #c6b5a1; color: white; }
 #project_dioc .project_inner h2 { background: #d9cec1; color: #bca992; }
-#project_dioc.project_show ~ .overlay { background: #9f8362; }
+#project_dioc.project_show ~ .overlay { background: black; }
 
 .project_link_feui { background: #3f7700; }
 
 #project_feui .project_inner { background: #244400; }
 #project_feui .project_inner h1, #project_feui .project_view, #project_feui .project_close { background: #3f7700; color: #a7ff44; }
 #project_feui .project_inner h2 { background: #5aaa00; color: #325d00; }
-#project_feui.project_show ~ .overlay { background: #091100; }
+#project_feui.project_show ~ .overlay { background: black; }
 
 .project_link_cara { background: #637700; }
 
 #project_cara .project_inner { background: #394400; }
 #project_cara .project_inner h1, #project_cara .project_view, #project_cara .project_close { background: #637700; color: #e0ff44; }
 #project_cara .project_inner h2 { background: #8eaa00; color: #4e5d00; }
-#project_cara.project_show ~ .overlay { background: #0e1100; }
+#project_cara.project_show ~ .overlay { background: black; }
 
 .project_link_troc { background: #8a8a8a; }
 
 #project_troc .project_inner { background: #707070; }
 #project_troc .project_inner h1, #project_troc .project_view, #project_troc .project_close { background: #8a8a8a; color: #efefef; }
 #project_troc .project_inner h2 { background: #a3a3a3; color: #7d7d7d; }
-#project_troc.project_show ~ .overlay { background: #565656; }
+#project_troc.project_show ~ .overlay { background: black; }
 
 .project_link_ries { background: #111217; }
 
@@ -424,21 +424,21 @@ a { text-decoration: none; -webkit-transition: color .3s ease-in-out; transition
 #project_plau .project_inner { background: #ecc035; }
 #project_plau .project_inner h1, #project_plau .project_view, #project_plau .project_close { background: #f1ce63; color: white; }
 #project_plau .project_inner h2 { background: #f5dd92; color: #efc74c; }
-#project_plau.project_show ~ .overlay { background: #daaa14; }
+#project_plau.project_show ~ .overlay { background: black; }
 
 .project_link_yj07 { background: #d4d4d4; }
 
 #project_yj07 .project_inner { background: #bbbbbb; }
 #project_yj07 .project_inner h1, #project_yj07 .project_view, #project_yj07 .project_close { background: #d4d4d4; color: white; }
 #project_yj07 .project_inner h2 { background: #eeeeee; color: #c8c8c8; }
-#project_yj07.project_show ~ .overlay { background: #a2a2a2; }
+#project_yj07.project_show ~ .overlay { background: black; }
 
 .project_link_lkct { background: #3f7700; }
 
 #project_lkct .project_inner { background: #244400; }
 #project_lkct .project_inner h1, #project_lkct .project_view, #project_lkct .project_close { background: #3f7700; color: #a7ff44; }
 #project_lkct .project_inner h2 { background: #5aaa00; color: #325d00; }
-#project_lkct.project_show ~ .overlay { background: #091100; }
+#project_lkct.project_show ~ .overlay { background: black; }
 
 /* MEDIA QUERIES
 ---------------------------------------*/

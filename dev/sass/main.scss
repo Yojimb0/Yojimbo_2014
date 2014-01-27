@@ -135,7 +135,7 @@
 	.project_achievements ul{list-style:square}
 	.project_achievements li{@extend %f_p_content;}
 	.project_buttons{text-align:center}
-	.project_buttons a{display:inline-block;padding:8px 0px;background:$white;color:#ddd;width:30%;margin:0 0 20px;font-weight:bold;@extend %f_p_buttons;cursor: pointer}
+	.project_buttons a{display:inline-block;padding:8px 5px;background:$white;color:#ddd;width:30%;margin:0 0 20px;font-weight:bold;@extend %f_p_buttons;cursor: pointer}
 	.project_buttons .project_view{margin-right: 5px}
 	
 	// Showing class
@@ -160,7 +160,7 @@
 			.project_view,
 			.project_close{background: darken(nth($prjColo, $i+1),10);color: lighten(nth($prjColo, $i+1),30)}
 			.project_inner h2{background: nth($prjColo, $i+1);color: darken(nth($prjColo, $i+1),15);}
-			&.project_show ~ .overlay {background: darken(nth($prjColo, $i+1),30);}
+			&.project_show ~ .overlay {background: darken($black, 30);}
 		}
 	}
 
