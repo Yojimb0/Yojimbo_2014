@@ -27,7 +27,7 @@ $(function(){
 
 	// updateResponsiveBehaviour
 	// Technique to get the responsive state (smallScreen/desktop) in the Javascript
-	// In order to bind/unbind the click event on the <aside> buttons
+	// In order to bind/unbind the click event on the aside buttons
 	function updateResponsiveBehaviour(){
 		var cssDisplay = $('#responsive_state').css('display');
 
@@ -57,7 +57,6 @@ $(function(){
 			$aside = $this.closest('aside'),
 			$asides = $('aside', $page),
 			openClass = 'aside_open';
-		console.log('Swapping <aside>', $this);
 
 		if($aside.hasClass(openClass)){
 			$asides.removeClass(openClass);
