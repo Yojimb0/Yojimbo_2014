@@ -22,9 +22,14 @@ module.exports = (grunt) ->
 					port: 9000
 					hostname: 'localhost'
 					base: './dev'
+			dist:
+				options:
+					port: 9000
+					hostname: 'localhost'
+					base: './dist'
 		
 		open:
-			dev:
+			all:
 				path: 'http://localhost:9000/'
 
 		watch:
@@ -46,7 +51,6 @@ module.exports = (grunt) ->
 				files: ['dev/*.jade', 'data.json']
 				tasks: ['jade']
 
-
 		sass:
 			dev:
 				options:
@@ -54,6 +58,12 @@ module.exports = (grunt) ->
 					sourcemap: true
 				files:
 					'dev/css/main.css': 'dev/sass/main.scss'
+			dist:
+				options:
+					style: 'compressed'
+					sourcemap: false
+				files:
+					'dist/css/main.css': 'dev/sass/main.scss'
 
 		jshint:
 			options:
@@ -73,13 +83,15 @@ module.exports = (grunt) ->
 					ext: '.svg'
 				}]
 
-
 		autoprefixer:
 			dev:
 				options:
 					map: true
 				src: 'dev/css/main.css'
 				dest: 'dev/css/main.css'
+			dist:
+				src: 'dist/css/main.css'
+				dest: 'dist/css/main.css'
 
 		jade:
 			html:
@@ -91,19 +103,19 @@ module.exports = (grunt) ->
 					data: grunt.file.readJSON("data.json")
 
 		staticinline:
-			dev:
+			dist:
+				options:
+					basepath: 'dist/'
 				files:
 					'dist/index.html': 'dist/index.html'
-
 		clean:
 			files: 
 				expand:	true,
 				cwd: 'dist/',
 				src: [
-					'**/*',
+					'**/*'
 					'!sftp-config.json'
 				]
-
 
 		imagemin:
 			dist:
@@ -122,18 +134,23 @@ module.exports = (grunt) ->
 					dest: 'dist',
 					src: [
 						'index.html',
-						'js/main.js',
-						'css/main.css',
+						# 'js/main.js',
+						#'css/main.css',
 						'css/visitor1.ttf',
 						'images/*.{gif,webp,png,jpg,svg}',
-						'cv/'
+						'cv/*'
+						'robots.txt'
+						'humans.txt'
+						'.htaccess'
+						'apple-touch-icon-precomposed.png'
+						'favicon.ico'
 					]
 				}]
 
 		uglify:
 			dist:
 				files:
-					'dist/js/main.js': ['dist/js/main.js']
+					'dist/js/main.js': ['dev/js/main.js']
 
 
 
@@ -143,23 +160,23 @@ module.exports = (grunt) ->
 	grunt.registerTask 'default', ['jshint']
 
 	grunt.registerTask 'server', [
-		'connect:dev',
-		'jade',
-		'sass', 'autoprefixer',
 		'jshint',
+		'sass', 'autoprefixer',
+		'jade',
 		'svgmin',
-		'open:dev', 'watch'
+		'connect:dev', 'open:all', 'watch'
 	]
 
 	grunt.registerTask 'build', [
 		'clean',
+		'jshint', 'uglify',
+		'sass:dist', 'autoprefixer:dist',
 		'jade',
-		'sass', 'autoprefixer',
-		'jshint', 
 		'svgmin',
 		'copy',
-		'uglify', 'staticinline',
+		'staticinline',
 		'imagemin',
+		'connect:dist', 'open:all', 'watch'
 	]
 
 
