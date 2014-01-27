@@ -87,3 +87,37 @@ This project have been done on a Mac. I used [SublimeText 2] for code editing. F
 
 [SublimeText 2]: http://www.sublimetext.com
 [Sketch]: http://www.bohemiancoding.com/sketch/
+
+
+---
+### Final details
+
+#### Favicon and Apple icons
+Made from my Sketch SVG sources, cropped, optimized and converted.
+
+**Ressources**
+> * [favicon.cc](http://www.favicon.cc/)
+* [HTML5 Boilerplate - Apple touch icons](https://github.com/h5bp/html5-boilerplate/blob/master/doc/extend.md)
+
+#### .htaccess
+I've set up an .htaccess file, because the site is currently on my good ol' french hosting provider ([ovh.com](http://www.ovh.com)).
+I'm on a shared plan, so very few options can be customized. Here's a list of my htaccess settings :
+* Compression (Deflate) of comon mime-type files
+* Expires headers tweaking (That I will probably extend when I'll switch on versioned filenames)
+* Rewrite engine avtivation
+* Force UTF-8 encoding
+* File access blocking (For sensible data, sources...)
+* I tried to prevent the server to send cookies, but this is not a configurable option, so it doesn't work
+
+**Ressources**
+> * https://github.com/h5bp/html5-boilerplate/blob/master/.htaccess
+
+
+#### [Performance check](http://developers.google.com/speed/pagespeed/insights/?url=yojimbo.fr)
+Wohoo 100/100 \o/
+
+
+### Next steps to do
+* Error page
+* Use versioned filenames for static assets, in order to maximize cache expiry
+* [Set up CloudFront](http://www.michaelgallego.fr/blog/2013/08/27/static-website-on-s3-cloudfront-and-route-53-the-right-way/)
