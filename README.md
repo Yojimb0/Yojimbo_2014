@@ -8,8 +8,7 @@ The markup language is obviously HTML 5. I used some semantic elements to better
 On the content side, I had a list of project to display. Instead of having a server and a database running, I choose to put everything in a JSON file, and 
 generate the HTML with the help of Jade.
 
-**Ressources**
-> * [jade-lang.com](http://jade-lang.com/)
+* [jade-lang.com](http://jade-lang.com/)
 * [Static JSON and Jade with Grunt](http://stackoverflow.com/questions/16267122/how-to-include-a-static-json-file-for-compilation-with-jade-and-grunt)
 * [The Truth About Multiple H1 Tags in the HTML5 Era](http://dev.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824)
 
@@ -20,8 +19,7 @@ generate the HTML with the help of Jade.
 All the CSS is compiled from `.scss` files. I used a recent version of Sass in order to enable sourcemaps, and be able to debug directly the sass inside the Chrome DevTools.
 Compilation is made with Grunt.
 
-**Ressources**
-> * [Chrome DevTools Revolution 2013 - Sass Source maps / Workspaces](http://www.html5rocks.com/en/tutorials/developertools/revolutions2013/)
+* [Chrome DevTools Revolution 2013 - Sass Source maps / Workspaces](http://www.html5rocks.com/en/tutorials/developertools/revolutions2013/)
 
 ---
 ### Javascript
@@ -30,8 +28,7 @@ I could have get rid of jQuery, it will probably be the next evolution of the we
 I tried to follow good practices, like caching my jQuery selectors, avoid anonymous function …  
 My Javascript file is very small. In a way that it's more interesting to inline it inside the main HTML file, rather than force an extra request.
 
-**Ressources**
-> * [Avoiding anonymous functions](http://toddmotto.com/avoiding-anonymous-javascript-functions/)
+* [Avoiding anonymous functions](http://toddmotto.com/avoiding-anonymous-javascript-functions/)
 * [Google Pagspeed - Inlining Javascript](https://developers.google.com/speed/pagespeed/module/filter-js-inline?hl=fr)
 
 
@@ -47,11 +44,10 @@ My gruntfile is in coffeescript, in order to avoid the huge number of curly brac
 ### Responsivity
 The website has only one breakpoint, at 855 pixels. Switching from a "desktop" view with both side panels shown, to a "small screen" view, where the side panels are pushed aside.  
 I tried using some modern units like VH to size some areas, but a bug in webkit prevent the dimensions of the areas to refresh when resizing the browser. Next time !  
-I used a trick to bind/unbind the click event used to show/hide the 2 `<aside>`, taht consists of getting the responsive state in javascript, with the help of a div, and media-queries CSS.
+I used a trick to bind/unbind the click event used to show/hide the 2 `<aside>`, that consists of getting the responsive state in javascript, with the help of a div, and media-queries CSS.
 
-**Ressources**
-> * [CSSTricks - Viewport sized typography](http://css-tricks.com/viewport-sized-typography/)
-> * [Get the responsive state in Javascript](http://stackoverflow.com/a/10364620)
+* [CSSTricks - Viewport sized typography](http://css-tricks.com/viewport-sized-typography/)
+* [Get the responsive state in Javascript](http://stackoverflow.com/a/10364620)
 
 
 ---
@@ -67,8 +63,7 @@ Once the page loaded, th Javascript calculates the pixel-width of the percent-wi
 ---
 ### Popups for projects
 
-**Ressources**
-> * [Modal windows effects](http://tympanus.net/codrops/2013/06/25/nifty-modal-window-effects/)
+* [Modal windows effects](http://tympanus.net/codrops/2013/06/25/nifty-modal-window-effects/)
 
 
 ---
@@ -76,8 +71,7 @@ Once the page loaded, th Javascript calculates the pixel-width of the percent-wi
 I wanted to have my avatar as SVG in the center area of the site, to simplify the handling of display on high-density screens.
 I also found some good social icons, that were made with Sketch, I modified them to fit the theme of the site.
 
-**Ressources**
-> * [Animated line drawing with SVG](http://jakearchibald.com/2013/animated-line-drawing-svg/)
+* [Animated line drawing with SVG](http://jakearchibald.com/2013/animated-line-drawing-svg/)
 * [Social icons I used](http://tinktank.in/free-flat-social-icons/)
 
 ---
@@ -90,16 +84,14 @@ This project have been done on a Mac. I used [SublimeText 2] for code editing. F
 
 
 ---
-### Final details
-
-#### Favicon and Apple icons
+### Favicon and Apple icons
 Made from my Sketch SVG sources, cropped, optimized and converted.
 
-**Ressources**
-> * [favicon.cc](http://www.favicon.cc/)
+* [favicon.cc](http://www.favicon.cc/)
 * [HTML5 Boilerplate - Apple touch icons](https://github.com/h5bp/html5-boilerplate/blob/master/doc/extend.md)
 
-#### .htaccess
+---
+### .htaccess
 I've set up an .htaccess file, because the site is currently on my good ol' french hosting provider ([ovh.com](http://www.ovh.com)).
 I'm on a shared plan, so very few options can be customized. Here's a list of my htaccess settings :
 * Compression (Deflate) of comon mime-type files
@@ -109,15 +101,16 @@ I'm on a shared plan, so very few options can be customized. Here's a list of my
 * File access blocking (For sensible data, sources...)
 * I tried to prevent the server to send cookies, but this is not a configurable option, so it doesn't work
 
-**Ressources**
-> * https://github.com/h5bp/html5-boilerplate/blob/master/.htaccess
+* https://github.com/h5bp/html5-boilerplate/blob/master/.htaccess
 
-
-#### [Performance check](http://developers.google.com/speed/pagespeed/insights/?url=yojimbo.fr)
-Wohoo 100/100 \o/
+---
+### Performance check
+With Google Pagespeed : [Wohoo 100/100](http://developers.google.com/speed/pagespeed/insights/?url=yojimbo.fr) \o/
 
 
 ### Next steps to do
+* Spell Check
 * Error page
 * Use versioned filenames for static assets, in order to maximize cache expiry
+* `Echap`to close popups
 * [Set up CloudFront](http://www.michaelgallego.fr/blog/2013/08/27/static-website-on-s3-cloudfront-and-route-53-the-right-way/)
