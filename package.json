@@ -15,6 +15,7 @@
     "grunt-contrib-imagemin": "~0.5.0",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-uglify": "~0.3.1",
-    "grunt-contrib-clean": "~0.5.0"
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-html-smoosher": "~0.1.2"
   }
 }
