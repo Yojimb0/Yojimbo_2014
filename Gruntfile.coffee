@@ -114,6 +114,7 @@ module.exports = (grunt) ->
 					basepath: 'dist/'
 				files:
 					'dist/index.html': 'dist/index.html'
+					'dist/404.html': 'dist/404.html'
 		clean:
 			files: 
 				expand:	true,
