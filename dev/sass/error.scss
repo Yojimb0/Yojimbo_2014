@@ -1,0 +1,14 @@
+body{height: 100%;width: 100%;margin:0;padding-top:50px;background: #eee;font-family: Verdana;}
+.svg_wrapper{max-width:100px;max-height: 300px;margin:auto;position: relative;}
+
+.svg_wrapper p{background: #FFF;margin: 0;padding: 10px 10px 12px;border-radius: 50%;text-align: center;white-space: nowrap;position: absolute;}
+.svg_wrapper p:after{position: absolute;content: '';display: block;border: 10px rgba(0, 0, 0, 0) solid;border-top: 15px solid #FFF;}
+.svg_wrapper .p1{transform: rotate(17deg);top: 40px;left: -130px;}
+.svg_wrapper .p1:after{transform: rotate(-150deg);top: -15px;right: 0px;;}
+.svg_wrapper .p2{transform: rotate(-10deg);top: 90px;right: -110px;}
+.svg_wrapper .p2:after{transform: rotate(150deg);top: -16px;left: 0px;}
+.svg_wrapper .p3{transform: rotate(10deg);top: 0;right: -70px;}
+.svg_wrapper .p3:after{transform: rotate(28deg);bottom: -15px;left: 0px;}
+
+
+.svg_wrapper svg{margin:auto;display:block;}

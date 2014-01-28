@@ -58,12 +58,14 @@ module.exports = (grunt) ->
 					sourcemap: true
 				files:
 					'dev/css/main.css': 'dev/sass/main.scss'
+					'dev/css/error.css': 'dev/sass/error.scss'
 			dist:
 				options:
 					style: 'compressed'
 					sourcemap: false
 				files:
 					'dist/css/main.css': 'dev/sass/main.scss'
+					'dist/css/error.css': 'dev/sass/error.scss'
 
 		jshint:
 			options:
@@ -87,11 +89,15 @@ module.exports = (grunt) ->
 			dev:
 				options:
 					map: true
-				src: 'dev/css/main.css'
-				dest: 'dev/css/main.css'
+				expand: true
+				flatten: true
+				src: 'dev/css/*.css'
+				dest: 'dev/css/'
 			dist:
-				src: 'dist/css/main.css'
-				dest: 'dist/css/main.css'
+				expand: true
+				flatten: true
+				src: 'dist/css/*.css'
+				dest: 'dist/css/'
 
 		jade:
 			html:
@@ -134,6 +140,7 @@ module.exports = (grunt) ->
 					dest: 'dist',
 					src: [
 						'index.html',
+						'404.html',
 						# 'js/main.js',
 						#'css/main.css',
 						'css/visitor1.ttf',
