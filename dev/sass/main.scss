@@ -139,7 +139,7 @@
 	.project_buttons .project_view{margin-right: 5px}
 
 	// Styles over the scrollarea (Bottom shadow)
-	.project_inner .scrollable_area:after {content: '';display: block;position: absolute;bottom: 0;left: 0;background: #BADA55;width: 100%;height: 25px;}
+	.project_inner .scrollable_area:after {content: '';display: block;position: absolute;bottom: 0;left: 0;width: 100%;height: 25px;}
 
 	// Showing class
 	.project_show {visibility:visible;}
