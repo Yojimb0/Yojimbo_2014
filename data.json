@@ -104,7 +104,7 @@
 				"Dev & Design",
 				"Optimizations (Especially Google Pagespeed Service use)"
 			],
-			"project_url" : "http://www.yojimbo.fr/2011/"
+			"project_url" : "http://www.yojimbo.fr/_/2011/"
 		},{
 			"id": "project_appw",
 			"title": "AppWall",
@@ -158,7 +158,8 @@
 				"Dev & Design",
 				"Custom blogging tool",
 				"Flickr feed integration"
-			]
+			],
+			"project_url" : "http://www.yojimbo.fr/_/2009/"
 		},{
 			"id": "project_youn",
 			"title": "youNco",
@@ -243,7 +244,7 @@
 			"project_achievements": [
 				"Flash design & dev"
 			],
-			"project_url" : "http://www.yojimbo.fr/2007/"
+			"project_url" : "http://www.yojimbo.fr/_/2007/"
 		},{
 			"id": "project_lkct",
 			"title": "linkCity",
