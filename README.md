@@ -110,7 +110,6 @@ With Google Pagespeed : [Wohoo 100/100](http://developers.google.com/speed/pages
 
 ### Next steps to do
 * Spell Check
-* Error page
 * Use versioned filenames for static assets, in order to maximize cache expiry
 * `Echap`to close popups
 * [Set up CloudFront](http://www.michaelgallego.fr/blog/2013/08/27/static-website-on-s3-cloudfront-and-route-53-the-right-way/)
