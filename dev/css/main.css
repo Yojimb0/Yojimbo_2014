@@ -127,17 +127,17 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .d p { font-family: 'Josefin Sans', serif; font-size: 1.8rem; font-weight: 100; }
 
-.project_list { font-family: 'visitor', cursive; font-size: 2rem; }
+.project_list { font-family: 'visitor', sans-serif; font-size: 2rem; }
 
-.aside_button { font-family: 'visitor', cursive; font-size: 2.2rem; }
+.aside_button { font-family: 'visitor', sans-serif; font-size: 2.2rem; }
 
-.project_inner h1 { font-family: 'visitor', cursive; font-size: 2.2rem; }
+.project_inner h1 { font-family: 'visitor', sans-serif; font-size: 2.2rem; }
 
-.project_inner h2, .project_tech span { font-family: 'visitor', cursive; font-size: 1.6rem; }
+.project_inner h2, .project_tech span { font-family: 'visitor', sans-serif; font-size: 1.6rem; }
 
 .project_details p, .project_achievements li { font-family: 'Josefin Sans', sans-serif; font-size: 1.8rem; }
 
-.project_buttons a { font-family: 'visitor', cursive; font-size: 1.8rem; }
+.project_buttons a { font-family: 'visitor', sans-serif; font-size: 1.8rem; }
 
 /* DEFAULTS
 ---------------------------------------*/
