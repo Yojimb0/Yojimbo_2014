@@ -54,7 +54,7 @@
 
 	</style>
 </head>
-<body>
+<body onload="javascript:document.getElementById('years').innerHTML=(new Date()).getFullYear()-2005">
 	
 	<table class="head nobreak">
 		<tr>
@@ -94,7 +94,7 @@
 			<h3>Profile</h3>
 			
 			<section>
-				<p>Since I started using Internet, I have been passionate about website building. At first it was only a hobby, and later I realized it could be my full-time job. It has been 7 years now, and I am still moving forward, always learning and experimenting to find solutions for every new step of modern web development.</p>
+				<p>Since I started using Internet, I have been passionate about website building. At first it was only a hobby, and later I realized it could be my full-time job. It has been <span id="years"></span> years now, and I am still moving forward, always learning and experimenting to find solutions for every new step of modern web development.</p>
 				<p>You cal also find some details on my personal website: <a href="http://yojimbo.fr">yojimbo.fr</a>, and dissect its developement on the <a href="https://github.com/Yojimb0/Yojimbo_2014">GitHub repository</a> </p>
 			</section>
 		</div>
@@ -104,7 +104,11 @@
 			<section>
 				<table>
 					<tr>
-						<td><small>March 2014</small></td>
+						<td><small>August 2014 - Now</small></td>
+						<td><strong>News Corp Australia</strong> - Sydney CBD (Australia)<br><em>Front-end web developer / Front-end Architect</em></td>
+					</tr>
+					<tr>
+						<td><small>March 2014 - August 2014</small></td>
 						<td><strong>Bauer Media</strong> - Sydney CBD (Australia)<br><em>Front-end web developer</em></td>
 					</tr>
 					<tr>
@@ -142,11 +146,11 @@
 					</tr>
 					<tr>
 						<td>CSS</td>
-						<td>Use of preprocessors, LESS, SASS, Compass<br>Responsive design, Progressive enhancement approach, spriting, optimizations</td>
+						<td>Use of preprocessors, LESS, SASS, Compass<br>Responsive design, Progressive enhancement approach, spriting, optimizations, use of SVG</td>
 					</tr>
 					<tr>
 						<td>JavaScript</td>
-						<td>Use of modern object oriented patterns, use of modern frameworks (AngularJS, Backbone ..), frameworks optimizations, performance issues<br>Few experiments with NodeJS</td>
+						<td>Use of modern object oriented patterns, use of modern frameworks (React, AngularJS, Backbone ..), frameworks optimizations, performance issues</td>
 					</tr>
 					<tr>
 						<td>Between front and back</td>
@@ -154,7 +158,7 @@
 					</tr>
 					<tr>
 						<td>Back-end</td>
-						<td>PHP<br>Databases - MySQL, MongoDB testing projects<br>NodeJS including ExpressJS, sockets, RESTful approach</td>
+						<td>NodeJS including ExpressJS, sockets, RESTful approach<br>PHP<br>Databases - MySQL, MongoDB testing projects</td>
 					</tr>
 				</table>
 			</section>
@@ -175,7 +179,7 @@
 					</tr>
 					<tr>
 						<td>Workflow enhancement</td>
-						<td>Constant use of Chrome DevTools, Grunt Automation (With plugins like Yeoman, Sass, Watch, Uglify, JSHint, etc ..), Frequent use of live-reloading (Through grunt, or LiveReload app), knowledge on other process automation tools (Brunch, Gulp), Transmit or SublimeFTP for FTP needs</td>
+						<td>Constant use of Chrome DevTools, Grunt & Gulp Automation (With plugins like Yeoman, Sass, Watch, Uglify, JSHint, etc ..), Webpack / Browserify, Transmit or SublimeFTP for FTP needs</td>
 					</tr>
 					<tr>
 						<td>Online tools used,<br>blog regularly consulted</td>
@@ -207,16 +211,39 @@
 		<h3>Professional experience</h3>
 
 
-		
 		<div class="nobreak">
-			<h4><em>March 2014:</em> Front-end web developer at <strong>Bauer Media</strong> - Sydney CBD (Australia)</h4>
+			<h4><em>August 2014 - Now:</em> Front-end web developer / Front-end Architect at <strong>News Corp Australia</strong> - Sydney CBD (Australia)</h4>
+			<section>
+				<p><em>
+					<a href="http://www.newscorpaustralia.com/">News Corp</a> is one of Australia's largest media companies, employing more than 8,000 staff nationwide and approximately 3,000 journalists. The publicly listed company's interests span newspaper and magazine publishing, Internet, subscription television, market research, DVD and film distribution, and film and television production trading assets.
+				</em></p>
+				<h5>Key responsibilities</h5>
+				<ul>
+					<li>Complete front-end architecture & responsive-design rewrite of the metropolitan/regional newspaper article pages (DailyTelegraph, PerthNow, HeraldSun, AdelaideNow, CourierMail + 6 regionals + 4 locals)</li>
+					<li>Architecturing and templating of the rolling news article pages (for live coverage)</li>
+					<li>Architecturing of a component library for internal use across sites</li>
+					<li>Prototyping & Architecturing of a solution for sharing custom-advertisment across all sites</li>
+					<li>Front-End research and prototyping</li>
+				</ul>
+				<h5>Key achievments</h5>
+				<ul>
+					<li>Lead on an award winning web-application developped during DevFoundry (1 day internal developers hack-day)</li>
+					<li>Creation of a front-end working group for innovations an tech-debt resolution</li>
+					<li>Organization of after work team-bonding events</li>
+				</ul>
+			</section>
+		</div>
+
+
+		<div class="nobreak">
+			<h4><em>March 2014 - August 2014:</em> Front-end web developer at <strong>Bauer Media</strong> - Sydney CBD (Australia)</h4>
 			<section>
 				<p><em>
 					<a href="http://www.bauer-media.com.au/">Bauer Media</a> publishes over 80 magazines in Australia with 45 audited titles selling around 85 million copies each year
 				</em></p>
 				<h5>Key responsibilities</h5>
 				<ul>
-					<li>Complete front-end rewrite of <a href="http://magshop.com.au/">MagShop website</a> (Under development)</li>
+					<li>Complete front-end rewrite of <a href="http://magshop.com.au/">MagShop website</a></li>
 					<li>Front-End research and prototyping (Javascript Framework for the checkout process, async components loading ...)</li>
 					<li>Responsive Design</li>
 				</ul>
