@@ -44,9 +44,20 @@
 		.section_main table td:first-of-type{white-space: nowrap;}
 		.section_main section{padding: 0 2em;}
 		.section_main h4 em{font-style: normal;font-weight: normal}
-		
+
 		hr{border: 1px solid #3D85C6;border-width: 1px 0 0;margin: 20px 0;}
 
+		.skill-line{display:flex;margin:10px auto;width:80%;max-width:600px;align-items:center;}
+		.skill-line aside{flex:0 0 100px;text-align:center;padding:10px;}
+		.skill-line aside img{width:40px;}
+		.skill-line div{background:cyan;border-radius:15px;padding:10px 20px}
+		.skill-line:nth-child(1) div{background:#E1BEE7;}
+		.skill-line:nth-child(2) div{background:#BBDEFB;}
+		.skill-line:nth-child(3) div{background:#B2DFDB;}
+		.skill-line:nth-child(4) div{background:#F0F4C3;}
+		.skill-line:nth-child(5) div{background:#FFE0B2;}
+
+		.skill-line:nth-child(4) img{transform:scaleX(-1);}
 	}
 
 	@media print{
@@ -85,15 +96,7 @@
 		<div class="nobreak">
 			<h3>Career objectives</h3>
 			<section>
-				<p>I thrive to improve my technical skills on each website I work on. My goal is to be proficient in cutting-edge aspects of web technologies such as HTML, CSS and JavaScript.</p>
-			</section>
-		</div>
-
-		<div class="nobreak">
-			<h3>Profile</h3>
-			
-			<section>
-				<p>Since I started using Internet, I have been passionate about website building. At first it was only a hobby, and later I realized it could be my full-time job. It has been <span id="years"></span> years now, and I am still moving forward, always learning and experimenting to find solutions for every new step of modern web development.</p>
+				<p>I thrive to improve my technical skills on each website I work on. My goal is to be proficient in cutting-edge aspects of web technologies such as HTML, CSS and JavaScript. Since I started wandering on the Internet, I have been passionate about website building. At first it was only a hobby, I later realized it could become my full-time job. It has been <span id="years"></span> years now, and I am still moving forward, always learning and experimenting to find solutions for every new step of modern web development.</p>
 				<!-- <p>You cal also find some details on my personal website: <a href="http://yojimbo.fr">yojimbo.fr</a>, and dissect its development on the <a href="https://github.com/Yojimb0/Yojimbo_2014">GitHub repository</a> </p> -->
 			</section>
 		</div>
@@ -134,36 +137,34 @@
 			</section>
 		</div>
 
-		<div>
+		<div class="nobreak">
 			<h3>Technical skills</h3>
-			<!-- <section class="nobreak"> -->
-				<h5>Languages & technologies</h5>
-				<table>
-					<tr>
-						<td>HTML</td>
-						<td>Semantic approach, accessibility, Web Components</td>
-					</tr>
-					<tr>
-						<td>CSS</td>
-						<td>Use of preprocessors, SASS, PostCSS<br>Responsive design, Progressive enhancement approach, spriting, optimizations, use of SVG</td>
-					</tr>
-					<tr>
-						<td>JavaScript</td>
-						<td>ES6, modern patterns and frameworks (VueJS, Polymer, React ..)</td>
-					</tr>
-					<tr>
-						<td>Work-flow enhancement</td>
-						<td>Webpack build processing setup (Babel, Scss/PostCSS, hot-reloading), linting, testing with Tape & Mocha</td>
-					</tr>
-					<tr>
-						<td>Back-end</td>
-						<td>NodeJS including ExpressJS, sockets, RESTful approach, templating with Pug. Serverless, Firebase.</td>
-					</tr>
-				</table>
-			<!-- </section> -->
+			<section class="nobreak">
+				<div class="skill-line">
+					<aside><img src="http://www.yojimbo.fr/cv/dev-workflow.svg" alt="dev-workflow"><br></aside>
+					<div><strong>Developement workflow:</strong> Git (GitHub, Stash, Bitbucket Cloud), Browser Developer Tools, Command Line / CLI, Package / Dependency Managers (NPM, Webpack)</div>
+				</div class="skill-line">
+				<div class="skill-line">
+					<div><strong>Deployment pipeline:</strong> Continuous integration / Continuous delivery, Bamboo (custom build scripts, deployment scripts), Travis CI, Docker, Unit-testing (mocha, tape), visual testing (Percy), end-to-end testing (cypress)</div>
+					<aside><img src="http://www.yojimbo.fr/cv/deployment-pipeline.svg" alt="deployment-pipeline"></aside>
+				</div class="skill-line">
+				<div class="skill-line">
+					<aside><img src="http://www.yojimbo.fr/cv/servers-and-cdns.svg" alt="servers-and-cdns"></aside>
+					<div><strong>Servers / CDNs / Databases:</strong> Node.js, Express, Templating Engines (Pug), Rest, GraphQL, Databases (MySQL, MongoDB, Firebase), Serverless strategies, Redis, Nginx, Pre-rendering, Server-side rendering</div>
+				</div class="skill-line">
+				<div class="skill-line">
+					<div><strong>Delivery pipeline:</strong> Image optimisation (compression, svg, sprite-sheets, lazy-loading), Resource priorisation (Preload/Prefetch/Preconnect), Code-splitting, Bundling optimisations, Minification, Font optimisations, Performance metrics (FCP, FMP, TTI), Caching strategies, Service-workers, Mobile performance, Cross-Browser Testing</div>
+					<aside><img src="http://www.yojimbo.fr/cv/delivery-pipeline.svg" alt="delivery-pipeline"></aside>
+				</div class="skill-line">
+				<div class="skill-line">
+					<aside><img src="http://www.yojimbo.fr/cv/user-experience.svg" alt="user-experience"></aside>
+					<div><strong>End-user experience:</strong> HTML Semantics, SEO, Single Page Applications, Progressive Web Apps, Web components, Modern javaScript patterns, Javascript frameworks (VueJS), Responsive Web Design, CSS Layout / Grids, CSS Animation, Progressive Enhancement / Graceful Degradation, Wireframing, Microdata / Microformats, Accessibility, Web fonts</div>
+				</div class="skill-line">
+			</section>
 		</div>
+		
 
-
+		
 		<div class="nobreak">
 			<h3>Professional experience</h3>
 
@@ -193,11 +194,21 @@
 					<li>Organizing training session for other teams</li>
 					<li>Prototyping around new technology (Progressive Web App)</li>
 				</ul>
-				<h5>Sept 2017 - Now: Lead Front-End Developer - Global Preference Center</h5>
+				<h5>Sept 2017 - May 2018: Lead Front-End Developer - Global Preference Center</h5>
 				<ul>
 					<li>Managing the developers and collaborating on finding a relevant architecture for the websites newsletter/preference dashboard</li>
 					<li>Second iteration of the component library</li>
 					<li>Maintaining a multi-brand styling system</li>
+				</ul>
+				<h5>May 2018 - June. 2018: Lead Front-End Developer - Progressive Web App (Proof of concept)</h5>
+				<ul>
+					<li>Using modern, state of the art architecture strategies (Serverless, SSR/CSR)</li>
+					<li>Service worker manipulation (Local resource caching, offline strategies)</li>
+				</ul>
+				<h5>June 2018 - now: Lead Front-End Developer - DNA Commercial team</h5>
+				<ul>
+					<li>Production release of modernized Premium Native framework</li>
+					<li>Rebuild of various commercial widgets</li>
 				</ul>
 				<h5>Side achievements</h5>
 				<ul>
@@ -371,7 +382,7 @@
 					<li>Proficiency on Windev, leading to a quick understanding of the existing code-base and rapid integration in the development team</li>
 					<li>Complete design rework (Usability, proper look and feel)</li>
 				</ul>
-			</section>
+			</section><hr>
 		</div>
 
 		<div class="nobreak">
@@ -390,21 +401,38 @@
 			</section>
 		</div>
 
+		<!-- <div class="nobreak">
+			<h3>Websites built in free-time</h3>
+			<section>
+				<p>Most recent</p>
+				<ul>
+					<li><a href="http://www.le-cac.fr/">le-cac.fr</a> (Chartered accountant office) - Design, HTML, CSS, JavaScript, back-end tools</li>
+					<li><a href="http://kubedesign.fr">kubedesign.fr</a> (3D images creation studio, for interior design or exhibition stands) - HTML, CSS, JavaScript</li>
+					<li>This CV - Build in static HTML and CSS, with webfont, simply printed in PDF from Google Chrome</li>
+				</ul>
+			</section><hr>
+		</div> -->
+
 		<div class="nobreak">
 			<h3>Interests</h3>
 			<section>
-				<h5>Sports</h5>
-				<ul>
-					<li>Climbing</li>
-					<li>Fitness</li>
-					<li>White water sports</li>
-				</ul>
-				<h5>Woodworking</h5>
-				<h5>Video games</h5>
+				<p><h5 class="inlined">Sports: </h5><span>Road cycling, hiking, winter sports</span></p>
+				<p><h5 class="inlined">Woodworking</h5></p>
+				<p><h5 class="inlined">Boardgames / Video games</h5></p>
+				<p><h5 class="inlined">Volunteering: </h5><span>for cancer research charity event (500 Ferrari's against cancer - <a href="http://sportetcollection.info">sportetcollection.info</a>)</span></p>
 			</section>
 		</div>
 
 	</section>
+
+
+	<small style="display:block;text-align:center;opacity:.5">Icons designed by Monkik from Flaticon</small>
+
+
+
+
+
+
 
 	
 </body>
